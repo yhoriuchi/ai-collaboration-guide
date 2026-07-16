@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shared Overleaf Agent Guide</title>
-    <meta name="description" content="Simple setup guide for using Codex and Claude agents with shared Overleaf projects.">
+    <meta name="description" content="Simple setup guide for using Codex and Claude agents with shared writing projects through Overleaf or a GitHub-centered workflow.">
     <link rel="stylesheet" href="styles.css?v=20260716-2">
   </head>
   <body>
@@ -26,7 +26,7 @@
           </p>
 
           <p>
-            A very small setup for using Codex, Claude, or similar agents with shared Overleaf writing projects. Collaborators can keep writing in Overleaf as usual. The agent installs the shared instructions and saves project-history logs automatically.
+            A small setup for using Codex, Claude, or similar agents with shared writing projects. Collaborators can work directly in Overleaf through Dropbox or use a GitHub-centered workflow connected to Overleaf. The agent installs the shared instructions and saves project-history logs automatically where the project convention requires them.
           </p>
         </section>
 
@@ -34,7 +34,7 @@
 
         <ol class="use-steps">
           <li>
-            <strong>Enable Overleaf Dropbox integration</strong> so the shared project is available as an existing folder for Codex or Claude.
+            <strong>Choose a working path.</strong> Use <strong>direct Overleaf</strong> by enabling Dropbox integration, or use the <strong>GitHub-centered alternative</strong> by connecting the project to Overleaf through GitHub and working from a local repository clone.
           </li>
           <li>
             <strong>Install the shared instructions</strong> by copying the Codex or Claude setup prompt and pasting it into the tool. The agent should save the global instruction files automatically.
@@ -44,12 +44,23 @@
             </div>
           </li>
           <li>
-            <strong>Choose the existing Overleaf project folder</strong> when creating or opening a Codex/Claude project. No Dropbox reorganization is needed.
+            <strong>Open the appropriate working folder</strong> when creating or opening a Codex/Claude project: the existing Overleaf project folder for the Dropbox route, or the local Git clone for the GitHub-centered route. No reorganization is needed.
           </li>
           <li>
-            <strong>Prompt normally.</strong> Ask the agent to edit, inspect, or revise in whatever way fits the task. The history file is the agent's responsibility.
+            <strong>Prompt normally.</strong> Ask the agent to edit, inspect, or revise in whatever way fits the task. Follow the project's own history, branch, and review conventions.
           </li>
         </ol>
+
+        <section>
+          <h2>GitHub-Centered Alternative</h2>
+          <p>Teams that prefer another editor can make GitHub the primary workspace while keeping a connected Overleaf project for collaboration and compilation. This is an equally valid alternative to direct Overleaf editing.</p>
+          <ul>
+            <li>Work from a local Git clone in the editor the authors prefer; the agent does not need direct Overleaf access.</li>
+            <li>Give Codex, Claude, or another coding agent access to the GitHub repository so it can inspect and edit the manuscript sources through GitHub.</li>
+            <li>Agree on the repository branch, commit, review, and synchronization conventions before editing. Avoid overlapping unsynchronized edits in GitHub and Overleaf.</li>
+            <li>The Dropbox-based project-history convention below applies to Overleaf project folders. A GitHub repository outside Dropbox should follow its own project-history convention.</li>
+          </ul>
+        </section>
 
         <section>
           <h2>Project History Convention</h2>
@@ -83,3 +94,4 @@
     </div>
   </body>
 </html>
+
