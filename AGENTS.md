@@ -10,6 +10,15 @@ These instructions are intended for AI agents such as Codex and Claude Code.
 - When multiple collaborators use AI agents, keep histories separated by human collaborator name.
 - Do not add project-specific `AGENTS.md` or `CLAUDE.md` files unless the user explicitly asks or the project truly needs its own rules.
 
+## GitHub-Centered Overleaf Workflow (Alternative Path)
+
+Direct editing through Overleaf Dropbox is not the only supported workflow. A project may use GitHub as its primary working repository and connect it to Overleaf through the project's GitHub integration.
+
+- Do not require direct Overleaf access or assume that the working files live under the Overleaf Dropbox directory.
+- A coding agent such as Codex or Claude can be given access to the GitHub repository and edit the manuscript sources through GitHub while coauthors use the connected Overleaf project.
+- Before changing files, check the project's branch, commit, review, and synchronization conventions. Avoid overlapping unsynchronized edits in GitHub and Overleaf, and respect repository protections.
+- The Overleaf project-history rule below applies when the working directory is inside the Overleaf Dropbox path. A GitHub-centered project elsewhere should follow its own repository and project-history conventions.
+
 ## Overleaf Project History
 
 When working in any project under:
@@ -205,3 +214,4 @@ Use this structure unless the user or project asks for a different one:
 
 - 
 ```
+
