@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI Collaboration Guide</title>
-    <meta name="description" content="Setup guide for using Codex and Claude with shared Overleaf projects.">
+    <meta name="description" content="Simple setup guide for using Codex and Claude with shared Overleaf projects.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -23,12 +23,13 @@
     <main>
       <section class="hero" id="start">
         <div class="hero-copy">
-          <h2>Use Codex and Claude consistently across shared Overleaf projects.</h2>
+          <h2>Use Codex and Claude with shared Overleaf projects without changing how collaborators write.</h2>
           <p>
-            This guide explains how collaborators should set up Dropbox sync, install global agent instructions, and save daily Markdown history files for AI-assisted work.
+            Collaborators can keep writing in Overleaf. Install the shared instruction file, set the synced Overleaf folder as the AI project working directory, and prompt Codex or Claude normally.
           </p>
           <div class="actions">
-            <a class="button primary" href="docs/overleaf-dropbox-setup.md">Overleaf Setup</a>
+            <a class="button primary" href="docs/codex-setup.md">Codex Setup</a>
+            <a class="button" href="docs/claude-setup.md">Claude Setup</a>
             <a class="button" href="AGENTS.md">Download AGENTS.md</a>
           </div>
         </div>
@@ -41,30 +42,27 @@
 
       <section class="grid" id="history">
         <article>
-          <h3>1. Sync Overleaf</h3>
-          <p>Use Overleaf Dropbox synchronization so the AI agent can work from the local project folder.</p>
-          <a href="docs/overleaf-dropbox-setup.md">Read setup</a>
-        </article>
-        <article>
-          <h3>2. Install Instructions</h3>
-          <p>Codex reads <code>~/.codex/AGENTS.md</code>. Claude Code reads <code>~/.claude/CLAUDE.md</code>.</p>
+          <h3>1. Install Instructions</h3>
+          <p>Copy the shared files once so Codex or Claude can read the project-history convention automatically.</p>
           <a href="docs/codex-setup.md">Codex</a>
           <a href="docs/claude-setup.md">Claude</a>
         </article>
         <article>
-          <h3>3. Save History</h3>
-          <p>Record model, effort, speed, files, commands, verification, and unresolved questions.</p>
+          <h3>2. Set Working Directory</h3>
+          <p>Create or open a Codex/Claude project using the Dropbox-synced Overleaf project folder as the working directory.</p>
+          <a href="docs/overleaf-dropbox-setup.md">Folder notes</a>
+        </article>
+        <article>
+          <h3>3. Prompt Normally</h3>
+          <p>Ask the AI agent to edit, inspect, or revise in whatever way fits the task. The history file should be saved automatically.</p>
           <a href="docs/project-history-convention.md">Read convention</a>
         </article>
       </section>
 
       <section class="panel">
         <h2>Recommended first prompt</h2>
-        <pre><code>We are working in an Overleaf project synced through Dropbox.
-Follow the global AGENTS/CLAUDE instructions.
-The project root is the current Dropbox-synced Overleaf folder.
-Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
-Record the exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.</code></pre>
+        <pre><code>This Codex/Claude project uses the Dropbox-synced Overleaf folder as its working directory.
+Please follow the shared AGENTS/CLAUDE instructions and save the project_history log automatically.</code></pre>
       </section>
 
       <section class="files" id="files">

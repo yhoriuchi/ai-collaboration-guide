@@ -5,20 +5,23 @@ This repository is a shareable guide for using AI agents, such as Codex and Clau
 It provides:
 
 - Global agent instructions for Codex and Claude Code.
-- A collaborator-facing setup guide for Overleaf Dropbox sync.
-- A `project_history` convention for documenting AI-assisted work.
+- A short setup guide for using an Overleaf project folder as the Codex or Claude working directory.
+- A `project_history` convention that AI agents should maintain automatically.
 - Templates that collaborators can copy into their own projects.
 - A simple static website entry point in `index.html`.
 
 ## Quick Start
 
-1. Open the website home page: `index.html`.
-2. Read `docs/overleaf-dropbox-setup.md`.
-3. Install the global agent instructions:
+Collaborators can keep writing and revising papers in Overleaf as usual. The local Dropbox-synced folder is mainly the working directory for Codex or Claude.
+
+1. Install the shared agent instructions:
    - Codex: copy `AGENTS.md` to `~/.codex/AGENTS.md`.
    - Claude Code: copy `AGENTS.md` to `~/.claude/AGENTS.md`, then copy `CLAUDE.md` to `~/.claude/CLAUDE.md`.
-4. Work from the local Dropbox-synced Overleaf project folder.
-5. Save AI work logs under `project_history/Your_Name/YYYY-MM-DD by Agent.md`.
+2. In Codex or Claude, create/open a project and set the working directory to the Dropbox-synced Overleaf project folder.
+3. Send instructions to Codex or Claude in whatever way is natural for the task.
+4. The AI agent should save logs under `project_history/Your_Name/YYYY-MM-DD by Agent.md`.
+
+For details, see `docs/codex-setup.md` or `docs/claude-setup.md`.
 
 ## Repository Layout
 

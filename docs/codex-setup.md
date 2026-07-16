@@ -1,5 +1,7 @@
 # Codex Setup
 
+Collaborators can keep writing and revising in Overleaf. The Dropbox-synced Overleaf folder is used as the Codex project working directory so Codex can inspect/edit files and save history logs.
+
 ## Install Global Instructions
 
 Copy the shared `AGENTS.md` file to:
@@ -10,21 +12,19 @@ Copy the shared `AGENTS.md` file to:
 
 Codex reads this global file automatically.
 
-## Start a Task
+## Create or Open a Codex Project
 
-Open the Dropbox-synced Overleaf project folder as the working directory:
+In Codex, create/open a project and set the working directory to the Dropbox-synced Overleaf project folder:
 
 ```text
 ~/Dropbox/Apps/Overleaf/Project-Name
 ```
 
-Then prompt Codex:
+After that, prompt Codex in whatever way is natural for the task. A useful first message is:
 
 ```text
-We are working in an Overleaf project synced through Dropbox.
-Follow the global AGENTS instructions.
-Save today's project history under project_history/Your_Name/YYYY-MM-DD by Codex.md.
-Record model, reasoning effort, speed/service tier, files changed, commands run, and verification.
+This Codex project uses the Dropbox-synced Overleaf folder as its working directory.
+Please follow the shared AGENTS instructions and save the project_history log automatically.
 ```
 
 Replace `Your_Name` with your collaborator folder name, for example:
@@ -33,3 +33,5 @@ Replace `Your_Name` with your collaborator folder name, for example:
 Yusaku_Horiuchi
 Huijie_Xu
 ```
+
+You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it.
