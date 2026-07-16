@@ -13,10 +13,10 @@ project_history/Person_Name/YYYY-MM-DD by Agent.md
 Examples:
 
 ```text
-project_history/Yusaku_Horiuchi/2026-07-15 by Codex.md
-project_history/Yusaku_Horiuchi/2026-07-15 by Claude.md
-project_history/Huijie_Xu/2026-07-15 by Codex.md
-project_history/Huijie_Xu/2026-07-15 by Claude.md
+project_history/Your_Name/2026-07-15 by Codex.md
+project_history/Your_Name/2026-07-15 by Claude.md
+project_history/Collaborator_Name/2026-07-15 by Codex.md
+project_history/Collaborator_Name/2026-07-15 by Claude.md
 ```
 
 ## Rules

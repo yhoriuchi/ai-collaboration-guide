@@ -24,9 +24,9 @@ These notes are for the repository owner or maintainer. Collaborators can usuall
 
 ## Publishing
 
-This folder is ready to serve as a private GitHub repository. If a website is useful, use GitHub Pages and publish from the repository root.
+This folder is ready to serve as a GitHub repository. If a website is useful, use GitHub Pages and publish from the repository root.
 
-Recommended first setting: keep the repository private and invite collaborators.
+Before making the repository public, review the visible files and Git history for names, private project titles, local paths, and internal workflow details.
 
 ## Privacy Notes
 

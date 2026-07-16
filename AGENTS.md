@@ -47,10 +47,10 @@ Use one subfolder per human collaborator, with spaces converted to underscores.
 Examples:
 
 ```text
-project_history/Yusaku_Horiuchi/YYYY-MM-DD by Codex.md
-project_history/Yusaku_Horiuchi/YYYY-MM-DD by Claude.md
-project_history/Huijie_Xu/YYYY-MM-DD by Codex.md
-project_history/Huijie_Xu/YYYY-MM-DD by Claude.md
+project_history/Your_Name/YYYY-MM-DD by Codex.md
+project_history/Your_Name/YYYY-MM-DD by Claude.md
+project_history/Collaborator_Name/YYYY-MM-DD by Codex.md
+project_history/Collaborator_Name/YYYY-MM-DD by Claude.md
 ```
 
 Use the human collaborator's name for the subfolder, not the AI agent's name. If the collaborator is unclear, ask when practical. Otherwise use `Unknown_Collaborator` and record the uncertainty in metadata.

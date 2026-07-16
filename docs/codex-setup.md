@@ -32,8 +32,8 @@ Please follow the shared AGENTS instructions and save the project_history log au
 Replace `Your_Name` with your collaborator folder name, for example:
 
 ```text
-Yusaku_Horiuchi
-Huijie_Xu
+Your_Name
+Collaborator_Name
 ```
 
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
