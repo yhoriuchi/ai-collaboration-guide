@@ -1,4 +1,4 @@
-# AI Setup Guide for Shared Overleaf Projects
+# Overleaf AI Setup Guide
 
 This repository is a shareable guide for using AI agents, such as Codex and Claude, with shared Overleaf writing projects.
 
