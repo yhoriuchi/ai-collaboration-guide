@@ -23,4 +23,16 @@ Collaborators can keep writing and revising papers in Overleaf as usual. I am on
 
 That is all. Please do not reorganize Dropbox folders or manually create logs unless something goes wrong.
 
+## Optional First Prompt
+
+After setting up Codex or Claude, you can paste this once at the start of a project:
+
+```text
+We are working in a shared Overleaf or research project.
+Follow the global AGENTS/CLAUDE instructions.
+Treat the current folder as the project root unless told otherwise.
+Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
+Record the exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.
+```
+
 For details, see `docs/codex-setup.md` or `docs/claude-setup.md`.

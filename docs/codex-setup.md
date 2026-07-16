@@ -25,8 +25,11 @@ Do not reorganize Dropbox folders. The folder only matters because Codex needs a
 After that, prompt Codex in whatever way is natural for the task. A useful first message is:
 
 ```text
-This Codex project uses the existing Overleaf project folder as its working directory.
-Please follow the shared AGENTS instructions and save the project_history log automatically.
+We are working in a shared Overleaf or research project.
+Follow the global AGENTS/CLAUDE instructions.
+Treat the current folder as the project root unless told otherwise.
+Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
+Record the exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.
 ```
 
 Replace `Your_Name` with your collaborator folder name, for example:

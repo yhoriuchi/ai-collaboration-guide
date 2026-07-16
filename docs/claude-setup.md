@@ -39,8 +39,11 @@ Do not reorganize Dropbox folders. The folder only matters because Claude needs 
 After that, prompt Claude in whatever way is natural for the task. A useful first message is:
 
 ```text
-This Claude Code project uses the existing Overleaf project folder as its working directory.
-Please follow the shared CLAUDE/AGENTS instructions and save the project_history log automatically.
+We are working in a shared Overleaf or research project.
+Follow the global AGENTS/CLAUDE instructions.
+Treat the current folder as the project root unless told otherwise.
+Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
+Record the exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.
 ```
 
 You do not need to manually create the history log each time. The shared instructions ask Claude to create or append it automatically.
