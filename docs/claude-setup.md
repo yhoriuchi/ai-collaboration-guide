@@ -5,7 +5,7 @@ This is meant to be easy. Copy the setup prompt below, paste it into Claude Code
 ## Setup Prompt
 
 ```text
-Please install the shared Overleaf-project AI instructions for Claude Code.
+Please install the shared Overleaf-project agent instructions for Claude Code.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
