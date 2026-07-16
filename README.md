@@ -1,6 +1,6 @@
-# AI Collaboration Guide
+# AI Setup Guide for Shared Overleaf Projects
 
-This repository is a shareable guide for using AI agents, such as Codex and Claude, with shared Overleaf projects and research software projects.
+This repository is a shareable guide for using AI agents, such as Codex and Claude, with shared Overleaf writing projects.
 
 The setup is intentionally simple. Collaborators should not need to change how they write in Overleaf or manage Dropbox folders.
 

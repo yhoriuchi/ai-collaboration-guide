@@ -8,6 +8,7 @@
   --teal: #0f766e;
   --teal-dark: #115e59;
   --plum: #7c3aed;
+  --rust: #9a3412;
   --code-bg: #111827;
   --code-ink: #f9fafb;
 }
@@ -30,7 +31,7 @@ a {
 }
 
 .page-shell {
-  width: min(1080px, calc(100% - 32px));
+  width: min(1080px, calc(100% - 18px));
   margin: 0 auto;
   padding: 40px 0 64px;
 }
@@ -46,6 +47,12 @@ a {
   font-size: clamp(2.3rem, 6vw, 4.8rem);
   line-height: 0.98;
   letter-spacing: 0;
+}
+
+.guide-hero hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 24px 0 18px;
 }
 
 .guide-hero p {
@@ -108,17 +115,15 @@ p {
   color: var(--muted);
 }
 
-.actions {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 .step-actions {
-  display: grid;
-  gap: 10px;
-  justify-items: start;
+  margin-top: 14px;
 }
 
 .button {
@@ -126,7 +131,6 @@ p {
   min-height: 42px;
   align-items: center;
   justify-content: center;
-  width: min(100%, 220px);
   border: 1px solid var(--line);
   border-radius: 7px;
   padding: 8px 14px;
@@ -145,6 +149,34 @@ p {
   color: #ffffff;
 }
 
+.use-steps {
+  max-width: 920px;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 28px;
+}
+
+.resource-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 16px;
+}
+
+.resource-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.resource-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 ol,
 ul {
   padding-left: 1.35rem;
@@ -152,10 +184,6 @@ ul {
 
 li + li {
   margin-top: 0.38rem;
-}
-
-.file-list {
-  max-width: 780px;
 }
 
 code {
@@ -181,7 +209,7 @@ pre code {
 
 @media (max-width: 760px) {
   .page-shell {
-    width: min(100% - 22px, 1080px);
+    width: min(100% - 18px, 1080px);
     padding-top: 18px;
   }
 
@@ -189,7 +217,8 @@ pre code {
     padding-top: 24px;
   }
 
-  .summary-grid {
+  .summary-grid,
+  .resource-grid {
     grid-template-columns: 1fr;
   }
 

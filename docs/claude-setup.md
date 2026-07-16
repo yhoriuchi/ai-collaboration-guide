@@ -5,7 +5,7 @@ This is meant to be easy. Copy the setup prompt below, paste it into Claude Code
 ## Setup Prompt
 
 ```text
-Please install the shared AI collaboration instructions for Claude Code.
+Please install the shared Overleaf-project AI instructions for Claude Code.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
@@ -14,7 +14,7 @@ Please install the shared AI collaboration instructions for Claude Code.
    ~/.claude/AGENTS.md
 4. Create or update ~/.claude/CLAUDE.md with exactly this line:
    @~/.claude/AGENTS.md
-5. Do not modify any Overleaf or research-project files during this setup.
+5. Do not modify any Overleaf project files during this setup.
 6. Confirm the final file paths and mention whether any network or file-write permission was needed.
 ```
 

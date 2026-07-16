@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AI Collaboration Guide</title>
-    <meta name="description" content="Very simple setup guide for using Codex and Claude with shared Overleaf projects.">
-    <link rel="stylesheet" href="styles.css?v=20260715-2">
+    <title>AI Setup Guide for Shared Overleaf Projects</title>
+    <meta name="description" content="Simple setup guide for using Codex and Claude with shared Overleaf projects.">
+    <link rel="stylesheet" href="styles.css?v=20260715-3">
   </head>
   <body>
     <main class="page-shell">
       <section class="guide-hero">
-        <h1>AI Collaboration Guide</h1>
+        <h1>AI Setup Guide for Shared Overleaf Projects</h1>
+        <hr>
 
         <ul class="metadata">
           <li><strong>Author:</strong> Yusaku Horiuchi</li>
@@ -24,37 +25,30 @@
         </p>
 
         <p>
-          A very small setup for using Codex, Claude, or similar AI tools with shared Overleaf projects. Collaborators can keep writing in Overleaf as usual. The AI agent installs the shared instructions and saves project-history logs automatically.
+          A very small setup for using Codex, Claude, or similar AI tools with shared Overleaf writing projects. Collaborators can keep writing in Overleaf as usual. The AI agent installs the shared instructions and saves project-history logs automatically.
         </p>
       </section>
 
       <h2>How to Use This Guide</h2>
 
-      <section class="summary-grid">
-        <article class="summary-card">
-          <h3>1. Enable Dropbox Integration</h3>
-          <p>Use Overleaf's Dropbox integration so the shared project is available as an existing folder for Codex or Claude.</p>
-        </article>
-
-        <article class="summary-card">
-          <h3>2. Install Instructions</h3>
-          <p>Copy the Codex or Claude setup prompt and paste it into the tool. The AI agent should save the global instruction files automatically.</p>
-          <div class="actions step-actions">
+      <ol class="use-steps">
+        <li>
+          <strong>Enable Overleaf Dropbox integration</strong> so the shared project is available as an existing folder for Codex or Claude.
+        </li>
+        <li>
+          <strong>Install the shared instructions</strong> by copying the Codex or Claude setup prompt and pasting it into the tool. The AI agent should save the global instruction files automatically.
+          <div class="hero-actions step-actions">
             <a class="button button-primary" href="docs/codex-setup.md">Codex Setup</a>
             <a class="button" href="docs/claude-setup.md">Claude Setup</a>
           </div>
-        </article>
-
-        <article class="summary-card">
-          <h3>3. Choose Project Folder</h3>
-          <p>Create or open a Codex/Claude project and choose the existing Overleaf project folder. No Dropbox reorganization is needed.</p>
-        </article>
-
-        <article class="summary-card">
-          <h3>4. Prompt Normally</h3>
-          <p>Ask the AI agent to edit, inspect, or revise in whatever way fits the task. The history file is the agent's responsibility.</p>
-        </article>
-      </section>
+        </li>
+        <li>
+          <strong>Choose the existing Overleaf project folder</strong> when creating or opening a Codex/Claude project. No Dropbox reorganization is needed.
+        </li>
+        <li>
+          <strong>Prompt normally.</strong> Ask the AI agent to edit, inspect, or revise in whatever way fits the task. The history file is the agent's responsibility.
+        </li>
+      </ol>
 
       <section>
         <h2>Project History Convention</h2>
@@ -65,12 +59,24 @@
 
       <section>
         <h2>Guide Files</h2>
-        <ul class="file-list">
-          <li><a href="AGENTS.md">AGENTS.md</a>: shared instructions for AI agents.</li>
-          <li><a href="CLAUDE.md">CLAUDE.md</a>: Claude Code import file.</li>
-          <li><a href="docs/codex-setup.md">Codex setup</a>: setup prompt for Codex.</li>
-          <li><a href="docs/claude-setup.md">Claude setup</a>: setup prompt for Claude Code.</li>
-        </ul>
+        <section class="resource-grid">
+          <article class="resource-card">
+            <h3>AGENTS.md</h3>
+            <p><a href="AGENTS.md">Shared instructions</a> for AI agents.</p>
+          </article>
+          <article class="resource-card">
+            <h3>CLAUDE.md</h3>
+            <p><a href="CLAUDE.md">Claude Code import file</a>.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Codex Setup</h3>
+            <p><a href="docs/codex-setup.md">Setup prompt</a> for Codex.</p>
+          </article>
+          <article class="resource-card">
+            <h3>Claude Setup</h3>
+            <p><a href="docs/claude-setup.md">Setup prompt</a> for Claude Code.</p>
+          </article>
+        </section>
       </section>
     </main>
   </body>

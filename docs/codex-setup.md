@@ -5,14 +5,14 @@ This is meant to be easy. Copy the setup prompt below, paste it into Codex, and 
 ## Setup Prompt
 
 ```text
-Please install the shared AI collaboration instructions for Codex.
+Please install the shared Overleaf-project AI instructions for Codex.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
 2. Create ~/.codex if it does not exist.
 3. Save the fetched content exactly to:
    ~/.codex/AGENTS.md
-4. Do not modify any Overleaf or research-project files during this setup.
+4. Do not modify any Overleaf project files during this setup.
 5. Confirm the final file path and mention whether any network or file-write permission was needed.
 ```
 
