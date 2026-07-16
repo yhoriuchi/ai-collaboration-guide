@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI Collaboration Guide</title>
-    <meta name="description" content="Simple setup guide for using Codex and Claude with shared Overleaf projects.">
+    <meta name="description" content="Very simple setup guide for using Codex and Claude with shared Overleaf projects.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -23,9 +23,9 @@
     <main>
       <section class="hero" id="start">
         <div class="hero-copy">
-          <h2>Use Codex and Claude with shared Overleaf projects without changing how collaborators write.</h2>
+          <h2>A very small setup for using Codex and Claude with shared Overleaf projects.</h2>
           <p>
-            Collaborators can keep writing in Overleaf. Install the shared instruction file, set the synced Overleaf folder as the AI project working directory, and prompt Codex or Claude normally.
+            Keep writing in Overleaf as usual. Copy the shared instruction file, choose the existing Overleaf project folder in Codex or Claude, and prompt normally. The AI agent saves the logs automatically.
           </p>
           <div class="actions">
             <a class="button primary" href="docs/codex-setup.md">Codex Setup</a>
@@ -43,25 +43,25 @@
       <section class="grid" id="history">
         <article>
           <h3>1. Install Instructions</h3>
-          <p>Copy the shared files once so Codex or Claude can read the project-history convention automatically.</p>
+          <p>Copy the shared files once so Codex or Claude knows how to save history logs automatically.</p>
           <a href="docs/codex-setup.md">Codex</a>
           <a href="docs/claude-setup.md">Claude</a>
         </article>
         <article>
-          <h3>2. Set Working Directory</h3>
-          <p>Create or open a Codex/Claude project using the Dropbox-synced Overleaf project folder as the working directory.</p>
+          <h3>2. Choose Project Folder</h3>
+          <p>Create or open a Codex/Claude project and choose the existing Overleaf project folder. No Dropbox reorganization is needed.</p>
           <a href="docs/overleaf-dropbox-setup.md">Folder notes</a>
         </article>
         <article>
           <h3>3. Prompt Normally</h3>
-          <p>Ask the AI agent to edit, inspect, or revise in whatever way fits the task. The history file should be saved automatically.</p>
+          <p>Ask the AI agent to edit, inspect, or revise in whatever way fits the task. The history file is the agent's responsibility.</p>
           <a href="docs/project-history-convention.md">Read convention</a>
         </article>
       </section>
 
       <section class="panel">
         <h2>Recommended first prompt</h2>
-        <pre><code>This Codex/Claude project uses the Dropbox-synced Overleaf folder as its working directory.
+        <pre><code>This Codex/Claude project uses the existing Overleaf project folder as its working directory.
 Please follow the shared AGENTS/CLAUDE instructions and save the project_history log automatically.</code></pre>
       </section>
 

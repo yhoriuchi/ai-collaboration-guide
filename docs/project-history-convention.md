@@ -1,6 +1,6 @@
 # Project History Convention
 
-Every substantive AI-assisted task should create or append to a Markdown history file. Collaborators should not need to do this manually; the shared `AGENTS.md` / `CLAUDE.md` instructions tell the AI agent to maintain the log.
+Every substantive AI-assisted task should create or append to a Markdown history file. Collaborators should not need to do this manually; the shared `AGENTS.md` / `CLAUDE.md` instructions tell the AI agent to maintain the log automatically.
 
 ## Folder and File Name
 

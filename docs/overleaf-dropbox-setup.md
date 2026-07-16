@@ -1,8 +1,8 @@
 # Overleaf Dropbox Setup
 
-Use Overleaf Dropbox synchronization so Codex or Claude can use the Overleaf project folder as its working directory.
+Most collaborators do not need to worry about Dropbox for this guide.
 
-Collaborators do not need to change how they normally write or revise papers. They can continue using Overleaf directly. The local Dropbox-synced folder is mainly for the AI agent to inspect/edit project files and save `project_history` logs.
+Collaborators can continue writing and revising in Overleaf directly. The only reason the local folder matters is that Codex or Claude needs an Overleaf project folder as its working directory.
 
 ## Expected Local Folder
 
@@ -18,15 +18,15 @@ Example:
 ~/Dropbox/Apps/Overleaf/Project-Name
 ```
 
-Use the synced project folder as the working directory for the Codex or Claude project.
+Choose the synced Overleaf project folder as the working directory for the Codex or Claude project.
 
 ## Important Notes
 
 - Overleaf Dropbox synchronization is a premium feature.
 - Each collaborator needs appropriate edit access and an eligible sync setup.
 - Dropbox sync does not automatically give every collaborator a local synced copy.
-- Avoid renaming or moving synced Overleaf project folders in Dropbox unless you know the sync consequences.
-- Collaborators should not manually reorganize local synced files just to use this guide.
+- Do not rename, move, or reorganize synced Overleaf folders just to use this guide.
+- The AI agent should save `project_history` logs automatically.
 
 ## Reference
 
