@@ -113,13 +113,15 @@ article,
 }
 
 .step-actions {
-  align-items: flex-start;
-  flex-direction: column;
+  display: grid;
+  gap: 12px;
+  justify-items: start;
   margin-top: 18px;
 }
 
 .step-actions .button {
   justify-content: center;
+  margin-left: 0;
   width: min(100%, 220px);
 }
 
