@@ -113,6 +113,10 @@ article,
   margin-top: 24px;
 }
 
+.step-actions {
+  margin-top: 18px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
