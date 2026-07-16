@@ -1,16 +1,20 @@
 # Codex Setup
 
-This is meant to be easy. Collaborators can keep writing and revising in Overleaf as usual. The only Codex setup is to install the shared instructions and choose the existing Overleaf project folder as the Codex working directory.
+This is meant to be easy. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
 
-## Install Global Instructions
-
-Copy the shared `AGENTS.md` file to:
+## Setup Prompt
 
 ```text
-~/.codex/AGENTS.md
-```
+Please install the shared AI collaboration instructions for Codex.
 
-Codex reads this global file automatically.
+1. Fetch the current AGENTS.md from:
+   https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
+2. Create ~/.codex if it does not exist.
+3. Save the fetched content exactly to:
+   ~/.codex/AGENTS.md
+4. Do not modify any Overleaf or research-project files during this setup.
+5. Confirm the final file path and mention whether any network or file-write permission was needed.
+```
 
 ## Create or Open a Codex Project
 
@@ -22,15 +26,7 @@ In Codex, create/open a project and choose the existing Overleaf project folder 
 
 Do not reorganize Dropbox folders. The folder only matters because Codex needs a project directory.
 
-After that, prompt Codex in whatever way is natural for the task. A useful first message is:
-
-```text
-We are working in a shared Overleaf or research project.
-Follow the global AGENTS/CLAUDE instructions.
-Treat the current folder as the project root unless told otherwise.
-Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
-Record the exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.
-```
+After that, prompt Codex in whatever way is natural for the task.
 
 Replace `Your_Name` with your collaborator folder name, for example:
 
@@ -40,3 +36,5 @@ Collaborator_Name
 ```
 
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
+
+If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to save that content to `~/.codex/AGENTS.md`.

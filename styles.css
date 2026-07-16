@@ -88,7 +88,6 @@ main {
 .hero-copy,
 .quick-card,
 article,
-.panel,
 .files {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -189,11 +188,6 @@ article p {
   color: var(--muted);
 }
 
-article a + a {
-  margin-left: 12px;
-}
-
-.panel,
 .files {
   margin-top: 24px;
   padding: 28px;
