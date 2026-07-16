@@ -114,7 +114,14 @@ article,
 }
 
 .step-actions {
+  align-items: flex-start;
+  flex-direction: column;
   margin-top: 18px;
+}
+
+.step-actions .button {
+  justify-content: center;
+  width: min(100%, 220px);
 }
 
 .button {
@@ -169,7 +176,7 @@ code {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: 24px;
 }

@@ -14,12 +14,13 @@ It provides:
 
 Collaborators can keep writing and revising papers in Overleaf as usual. I am only asking each collaborator to do a few small setup steps.
 
-1. Install the shared agent instructions:
+1. Enable Overleaf Dropbox integration for the shared project.
+2. Install the shared agent instructions:
    - Codex: copy `AGENTS.md` to `~/.codex/AGENTS.md`.
    - Claude Code: copy `AGENTS.md` to `~/.claude/AGENTS.md`, then copy `CLAUDE.md` to `~/.claude/CLAUDE.md`.
-2. In Codex or Claude, create/open a project and choose the existing Overleaf project folder as the working directory.
-3. Send instructions to Codex or Claude in whatever way is natural for the task.
-4. The AI agent should automatically save logs under `project_history/Your_Name/YYYY-MM-DD by Agent.md`.
+3. In Codex or Claude, create/open a project and choose the existing Overleaf project folder as the working directory.
+4. Send instructions to Codex or Claude in whatever way is natural for the task.
+5. The AI agent should automatically save logs under `project_history/Your_Name/YYYY-MM-DD by Agent.md`.
 
 That is all. Please do not reorganize Dropbox folders or manually create logs unless something goes wrong.
 
