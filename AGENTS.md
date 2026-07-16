@@ -219,15 +219,3 @@ Use this structure unless the user or project asks for a different one:
 
 - 
 ```
-
-## First Prompt Template
-
-At the beginning of a task, use or adapt:
-
-```text
-We are working in a shared Overleaf or research project.
-Follow the global AGENTS/CLAUDE instructions.
-Treat the current folder as the project root unless told otherwise.
-Save today's project history under project_history/Your_Name/YYYY-MM-DD by Agent.md.
-Record exact model, reasoning effort, speed/service tier, files changed, commands run, and verification.
-```
