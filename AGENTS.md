@@ -2,20 +2,6 @@
 
 These instructions are intended for AI agents such as Codex and Claude Code.
 
-Copy this file to:
-
-```text
-~/.codex/AGENTS.md
-```
-
-For Claude Code, copy this file to:
-
-```text
-~/.claude/AGENTS.md
-```
-
-and use `CLAUDE.md` to import it.
-
 ## General Principles
 
 - Be concrete and audit-friendly.
