@@ -20,13 +20,17 @@ Please install the shared Overleaf-project agent instructions for Claude Code.
 
 ## Create or Open a Claude Code Project
 
-In Claude Code, create/open a project and choose the existing Overleaf project folder as the working directory:
+Choose the working directory that matches the project's collaboration path:
+
+- **Direct Overleaf:** choose the existing Overleaf project folder:
 
 ```text
 ~/Dropbox/Apps/Overleaf/Project-Name
 ```
 
-Do not reorganize Dropbox folders. The folder only matters because Claude needs a project directory.
+- **GitHub-centered alternative:** choose a local clone of the repository connected to Overleaf. Authors can use their preferred editor, and Claude Code can work through its GitHub access rather than direct Overleaf access.
+
+Do not reorganize Dropbox folders or repository files merely for setup. Before editing in the GitHub-centered workflow, follow the project's branch, commit, review, and synchronization conventions; do not make overlapping unsynchronized edits in GitHub and Overleaf.
 
 After that, prompt Claude in whatever way is natural for the task.
 
@@ -39,3 +43,4 @@ If Claude cannot access the URL automatically, open `AGENTS.md` from this reposi
 Claude Code memory docs:
 
 https://code.claude.com/docs/en/memory
+
