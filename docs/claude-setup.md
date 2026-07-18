@@ -1,11 +1,11 @@
-# Claude Code Setup
+# Claude Code Setup: Alternative Example
 
-This is meant to be easy. Copy the setup prompt below, paste it into Claude Code, and approve the file write if Claude asks. Claude should save the shared global instructions automatically.
+This shows how the same tool-agnostic recording convention can be implemented with Claude Code. Copy the setup prompt below, paste it into Claude Code, and approve the file write if Claude asks. Claude should save the shared global instructions automatically.
 
 ## Setup Prompt
 
 ```text
-Please install the shared Overleaf-project agent instructions for Claude Code.
+Please install the shared instructions for recording AI use in collaborative research projects with Claude Code.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
@@ -43,4 +43,3 @@ If Claude cannot access the URL automatically, open `AGENTS.md` from this reposi
 Claude Code memory docs:
 
 https://code.claude.com/docs/en/memory
-

@@ -1,6 +1,6 @@
 # Global Agent Instructions for Collaborative Research Projects
 
-These instructions are intended for AI agents such as Codex and Claude Code.
+These instructions provide a tool-agnostic convention for recording substantive AI use. They may be adapted for Codex, Claude Code, or another AI system that can maintain project files.
 
 ## General Principles
 
@@ -8,11 +8,20 @@ These instructions are intended for AI agents such as Codex and Claude Code.
 - Prefer exact file paths, commands, dates, model names, and verification results over vague summaries.
 - Do not guess hidden runtime metadata. If a value is unavailable, write `Not exposed in this session`.
 - When multiple collaborators use AI agents, keep histories separated by human collaborator name.
+- After substantive work, maintain a durable project-history record even when no other project file changed.
+- Record the user's request, inputs examined, actions taken, files changed, outputs produced, verification performed, assumptions, and unresolved questions.
+- Follow project rules for privacy, confidential data, authorship, disclosure, version control, and the approved location of AI-use records.
 - Do not add project-specific `AGENTS.md` or `CLAUDE.md` files unless the user explicitly asks or the project truly needs its own rules.
 
-## GitHub-Centered Overleaf Workflow (Alternative Path)
+## Preferred Example: Dropbox + Overleaf + Codex
 
-Direct editing through Overleaf Dropbox is not the only supported workflow. A project may use GitHub as its primary working repository and connect it to Overleaf through the project's GitHub integration.
+The preferred implementation is a shared Overleaf project synchronized through Dropbox and opened as the working directory in Codex. Collaborators can continue writing in Overleaf while Codex works on the synchronized files and automatically maintains the project history described below.
+
+This combination is an example, not a requirement. Preserve the same recording standard when using another AI tool, storage service, document platform, or repository workflow, and adapt only the tool-specific setup and path conventions.
+
+## GitHub-Centered Overleaf Workflow
+
+As an alternative to the preferred Dropbox + Overleaf + Codex example, a project may use GitHub as its primary working repository and connect it to Overleaf through the project's GitHub integration.
 
 - Do not require direct Overleaf access or assume that the working files live under the Overleaf Dropbox directory.
 - A coding agent such as Codex or Claude can be given access to the GitHub repository and edit the manuscript sources through GitHub while coauthors use the connected Overleaf project.
@@ -214,4 +223,3 @@ Use this structure unless the user or project asks for a different one:
 
 - 
 ```
-

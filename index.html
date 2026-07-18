@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shared Overleaf Agent Guide</title>
-    <meta name="description" content="Simple setup guide for using Codex and Claude agents with shared writing projects through Overleaf or a GitHub-centered workflow.">
+    <title>Guide to Recording AI Use</title>
+    <meta name="description" content="A tool-agnostic guide to recording substantive AI use, with Dropbox, Overleaf, and Codex as the preferred example.">
     <link rel="stylesheet" href="styles.css?v=20260716-2">
   </head>
   <body>
     <div class="guide-frame">
       <main class="page-shell">
         <section class="guide-hero">
-          <h1>Shared Overleaf Agent<br>Guide</h1>
+          <h1>Guide to Recording<br>AI Use</h1>
           <hr>
 
           <ul class="metadata">
             <li><strong>Author:</strong> Yusaku Horiuchi</li>
             <li><strong>Affiliation:</strong> Syde P. Deeb Eminent Scholar in Political Science, Florida State University</li>
             <li><strong>Created:</strong> July 15, 2026</li>
-            <li><strong>Last revised:</strong> July 16, 2026</li>
+            <li><strong>Last revised:</strong> July 18, 2026</li>
           </ul>
 
           <p class="page-views">
@@ -26,47 +26,60 @@
           </p>
 
           <p>
-            A small setup for using Codex, Claude, or similar agents with shared writing projects. Collaborators can work directly in Overleaf through Dropbox or use a GitHub-centered workflow connected to Overleaf. The agent installs the shared instructions and saves project-history logs automatically where the project convention requires them.
+            A lightweight, tool-agnostic convention for making substantive AI use visible and auditable. Ask the AI tool to maintain a dated project-history file that records the request, inputs, actions, changes, outputs, and verification. Teams can use any suitable storage service, writing platform, version-control system, or AI assistant.
           </p>
         </section>
 
-        <h2>How to Use This Guide</h2>
+        <section>
+          <h2>What This Guide Recommends</h2>
+          <p>The goal is not to prescribe a particular product. It is to keep a durable record close to the project so collaborators can understand how AI contributed without reconstructing the work from a private chat.</p>
+          <ul>
+            <li>Record substantive AI-assisted work, including inspection and decisions even when no project file changes.</li>
+            <li>Use dated, human-readable files that collaborators can inspect with ordinary tools.</li>
+            <li>Separate records by human collaborator and identify the AI tool that performed the work.</li>
+            <li>Include concrete inputs, files, commands, outputs, verification results, assumptions, and unresolved questions.</li>
+            <li>Store the history with the project when practical and follow the project's privacy, security, authorship, and version-control rules.</li>
+          </ul>
+        </section>
+
+        <h2>Preferred Example: Dropbox + Overleaf + Codex</h2>
+
+        <p>Dropbox + Overleaf + Codex is the preferred example because collaborators can continue writing in Overleaf, Dropbox provides a synchronized local project folder, and Codex can edit the same files while maintaining the history record automatically.</p>
 
         <ol class="use-steps">
           <li>
-            <strong>Choose a working path.</strong> Use <strong>direct Overleaf</strong> by enabling Dropbox integration, or use the <strong>GitHub-centered alternative</strong> by connecting the project to Overleaf through GitHub and working from a local repository clone.
+            <strong>Synchronize the shared Overleaf project with Dropbox.</strong> Keep the existing folder structure; no reorganization is required.
           </li>
           <li>
-            <strong>Install the shared instructions</strong> by copying the Codex or Claude setup prompt and pasting it into the tool. The agent should save the global instruction files automatically.
+            <strong>Install the shared Codex instructions.</strong> Copy the setup prompt and paste it into Codex. Codex should save the global instruction file automatically.
             <div class="hero-actions step-actions">
               <a class="button button-primary" href="docs/codex-setup.md">Codex Setup</a>
-              <a class="button" href="docs/claude-setup.md">Claude Setup</a>
             </div>
           </li>
           <li>
-            <strong>Open the appropriate working folder</strong> when creating or opening a Codex/Claude project: the existing Overleaf project folder for the Dropbox route, or the local Git clone for the GitHub-centered route. No reorganization is needed.
+            <strong>Open the synchronized Overleaf project folder in Codex</strong> as the working directory.
           </li>
           <li>
-            <strong>Prompt normally.</strong> Ask the agent to edit, inspect, or revise in whatever way fits the task. Follow the project's own history, branch, and review conventions.
+            <strong>Prompt normally.</strong> After substantive work, Codex should create or append to the dated history file automatically.
           </li>
         </ol>
 
         <section>
-          <h2>GitHub-Centered Alternative</h2>
-          <p>Teams that prefer another editor can make GitHub the primary workspace while keeping a connected Overleaf project for collaboration and compilation. This is an equally valid alternative to direct Overleaf editing.</p>
+          <h2>Adapt It to Other Tools</h2>
+          <p>The same convention works with other AI assistants, synchronized folders, document platforms, and repositories. Translate the setup details—not the transparency standard—to the tools your team already uses.</p>
           <ul>
-            <li>Work from a local Git clone in the editor the authors prefer; the agent does not need direct Overleaf access.</li>
-            <li>Give Codex, Claude, or another coding agent access to the GitHub repository so it can inspect and edit the manuscript sources through GitHub.</li>
-            <li>Agree on the repository branch, commit, review, and synchronization conventions before editing. Avoid overlapping unsynchronized edits in GitHub and Overleaf.</li>
-            <li>The Dropbox-based project-history convention below applies to Overleaf project folders. A GitHub repository outside Dropbox should follow its own project-history convention.</li>
+            <li><strong>Another AI tool:</strong> place equivalent global or project instructions where that tool reads them. The included <a href="docs/claude-setup.md">Claude Code setup</a> is one example.</li>
+            <li><strong>GitHub-centered Overleaf:</strong> work from a local clone connected to Overleaf and follow the repository's branch, commit, review, and synchronization rules.</li>
+            <li><strong>Another platform:</strong> keep the history beside the project when practical, or in another shared, durable location agreed upon by the team.</li>
+            <li><strong>Tools without file access:</strong> export or copy a concise activity record into the project history at the end of substantive work.</li>
           </ul>
         </section>
 
         <section>
           <h2>Project History Convention</h2>
-          <p>The agent should create or append to this file automatically:</p>
+          <p>When the project permits it, the AI tool should create or append to this file automatically:</p>
           <pre><code>project_history/Your_Name/YYYY-MM-DD by Agent.md</code></pre>
-          <p>Use one folder per human collaborator and one file per date and agent.</p>
+          <p>Use one folder per human collaborator and one file per date and AI tool. Record substantive inspection, decisions, and verification even when no other file changes.</p>
         </section>
 
         <section>
@@ -94,4 +107,3 @@
     </div>
   </body>
 </html>
-

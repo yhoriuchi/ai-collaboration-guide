@@ -1,11 +1,11 @@
-# Codex Setup
+# Codex Setup: Preferred Example
 
-This is meant to be easy. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
+This is the preferred implementation of the tool-agnostic recording convention: Dropbox synchronizes a shared Overleaf project, and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
 
 ## Setup Prompt
 
 ```text
-Please install the shared Overleaf-project agent instructions for Codex.
+Please install the shared instructions for recording AI use in collaborative research projects with Codex.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
@@ -42,4 +42,3 @@ Collaborator_Name
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
 
 If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to save that content to `~/.codex/AGENTS.md`.
-
