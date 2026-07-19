@@ -29,15 +29,15 @@ Use the researcher's local date and time zone. Create or append to the record at
 
 Do not include confidential, sensitive, proprietary, embargoed, or personally identifying information in the history unless the project permits it. The project history supplements rather than replaces any required AI disclosure, methods documentation, data-management record, laboratory notebook, authorship statement, or ethics documentation.
 
-## Preferred Example: Dropbox + Overleaf + Codex
+## Worked Example: Dropbox + Overleaf + Codex
 
-The preferred implementation is a shared Overleaf project synchronized through Dropbox and opened as the working directory in Codex. Collaborators can continue writing in Overleaf while Codex works on the synchronized files and automatically maintains the project history described below.
+The author's worked example is a shared Overleaf project synchronized through Dropbox and opened as the working directory in Codex. Collaborators can continue writing in Overleaf while Codex works on the synchronized files and automatically maintains the project history described below.
 
-This combination is an example, not a requirement. Preserve the same recording standard when using another AI tool, storage service, document platform, or repository workflow, and adapt only the tool-specific setup and path conventions.
+This combination reflects the author's workflow; it is not a universal product recommendation. Claude Code and other file-capable AI assistants can follow the same recording standard. Preserve that standard when using another AI tool, storage service, document platform, or repository workflow, and adapt only the tool-specific setup and path conventions.
 
 ## GitHub-Centered Overleaf Workflow
 
-As an alternative to the preferred Dropbox + Overleaf + Codex example, a project may use GitHub as its primary working repository and connect it to Overleaf through the project's GitHub integration.
+As an alternative to the Dropbox-centered worked example, a project may use GitHub as its primary working repository and connect it to Overleaf through the project's GitHub integration.
 
 - Do not require direct Overleaf access or assume that the working files live under the Overleaf Dropbox directory.
 - A coding agent such as Codex or Claude can be given access to the GitHub repository and edit the manuscript sources through GitHub while coauthors use the connected Overleaf project.

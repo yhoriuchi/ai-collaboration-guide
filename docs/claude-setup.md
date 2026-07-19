@@ -1,6 +1,6 @@
-# Claude Code Setup: Alternative Example
+# Claude Code Setup
 
-This shows how the same tool-agnostic recording convention can be implemented with Claude Code. Copy the setup prompt below, paste it into Claude Code, and approve the file write if Claude asks. Claude should save the shared global instructions automatically.
+This setup implements the same tool-agnostic recording convention with Claude Code. Copy the setup prompt below, paste it into Claude Code, and approve the file write if Claude asks. Claude should save the shared global instructions automatically.
 
 ## Setup Prompt
 

@@ -4,7 +4,7 @@ This repository provides a practical, tool-agnostic convention that helps resear
 
 The central idea is simple: install persistent instructions that tell a file-capable AI assistant to maintain a dated, human-readable project-history file alongside the work. The record should say what the researcher requested, what the tool did, what files or evidence it used, what changed, and how the result was verified. Individual researchers and teams in any discipline may use the convention with manuscripts, data, code, literature reviews, presentations, grants, teaching materials, or other research work.
 
-The preferred example in this guide uses **Dropbox + Overleaf + Codex** because it lets collaborators continue writing in Overleaf while Codex works on the synchronized local project folder and records its work automatically. This is an example, not a requirement.
+The main worked example uses the author's own **Dropbox + Overleaf + Codex** workflow because it lets collaborators continue writing in Overleaf while Codex works on the synchronized local project folder and records its work automatically. The same convention works with Claude Code and other file-capable AI assistants; the example is not a universal product recommendation.
 
 It provides:
 
@@ -16,7 +16,7 @@ It provides:
 
 ## Quick Start
 
-### Preferred example: Dropbox + Overleaf + Codex
+### Worked example: Dropbox + Overleaf + Codex
 
 1. Enable Overleaf Dropbox integration for the shared project.
 2. Open `docs/codex-setup.md`, copy the setup prompt, and paste it into Codex. Codex should install the global instructions automatically.
@@ -25,6 +25,6 @@ It provides:
 
 ### Other tools and workflows
 
-Use the same recording principle with another AI assistant, a different synchronized folder, a local repository, or a GitHub-centered Overleaf project. Adapt the instruction-file location and working-directory convention to the tool, while preserving the content and auditability of the history record. See `docs/claude-setup.md` for one additional implementation.
+Claude Code users can follow the equally supported `docs/claude-setup.md` instructions. Use the same recording principle with another AI assistant, a different synchronized folder, a local repository, or a GitHub-centered Overleaf project. Adapt the instruction-file location and working-directory convention to the tool while preserving the content and auditability of the history record.
 
 Automatic recording requires an AI assistant that can write project files and follow persistent instructions. If a tool cannot do that, export or copy a concise activity record manually. In all cases, follow applicable privacy, confidentiality, ethics, authorship, disclosure, institutional, funder, journal, and repository requirements.

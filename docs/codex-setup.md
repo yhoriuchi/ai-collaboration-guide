@@ -1,6 +1,6 @@
-# Codex Setup: Preferred Example
+# Codex Setup
 
-This is the preferred implementation of the tool-agnostic recording convention: Dropbox synchronizes a shared Overleaf project, and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
+This setup implements the tool-agnostic recording convention with Codex. In the author's worked example, Dropbox synchronizes a shared Overleaf project and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
 
 ## Setup Prompt
 
