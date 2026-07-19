@@ -1,6 +1,6 @@
-# Global Agent Instructions for Collaborative Research Projects
+# Global Agent Instructions for Recording AI Use in Research
 
-These instructions provide a tool-agnostic convention for recording substantive AI use. They may be adapted for Codex, Claude Code, or another AI system that can maintain project files.
+These instructions provide a tool-agnostic convention for automatically recording substantive AI use across research disciplines and project types. They may be adapted for Codex, Claude Code, or another AI system that can maintain project files.
 
 ## General Principles
 
@@ -12,6 +12,22 @@ These instructions provide a tool-agnostic convention for recording substantive 
 - Record the user's request, inputs examined, actions taken, files changed, outputs produced, verification performed, assumptions, and unresolved questions.
 - Follow project rules for privacy, confidential data, authorship, disclosure, version control, and the approved location of AI-use records.
 - Do not add project-specific `AGENTS.md` or `CLAUDE.md` files unless the user explicitly asks or the project truly needs its own rules.
+
+## General Research Project History
+
+For substantive AI-assisted work in a research project, create or append to the project's established AI-use or project-history record. This applies to individual and collaborative work across disciplines, including manuscripts, data analysis, code, literature reviews, presentations, grant proposals, research administration, teaching materials, and other research-related artifacts.
+
+If the project has no established convention, use the nearest project root and this default path:
+
+```text
+project_history/Person_Name/YYYY-MM-DD by Agent.md
+```
+
+Use one subfolder per human researcher, with spaces converted to underscores, and identify the AI tool in the filename. For a solo project, use the researcher's name. If the human history owner is unclear, ask when practical; otherwise use `Unknown_Researcher` and record the uncertainty.
+
+Use the researcher's local date and time zone. Create or append to the record at the end of each substantive task, including when the work only inspected materials, provided advice, made a decision, or performed verification. Do not overwrite earlier entries from the same day.
+
+Do not include confidential, sensitive, proprietary, embargoed, or personally identifying information in the history unless the project permits it. The project history supplements rather than replaces any required AI disclosure, methods documentation, data-management record, laboratory notebook, authorship statement, or ethics documentation.
 
 ## Preferred Example: Dropbox + Overleaf + Codex
 

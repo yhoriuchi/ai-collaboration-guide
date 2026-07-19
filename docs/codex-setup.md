@@ -5,14 +5,14 @@ This is the preferred implementation of the tool-agnostic recording convention: 
 ## Setup Prompt
 
 ```text
-Please install the shared instructions for recording AI use in collaborative research projects with Codex.
+Please install the shared instructions for automatically recording substantive AI use across my research projects with Codex.
 
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
 2. Create ~/.codex if it does not exist.
 3. Save the fetched content exactly to:
    ~/.codex/AGENTS.md
-4. Do not modify any Overleaf project files during this setup.
+4. Do not modify any research project files during this setup.
 5. Confirm the final file path and mention whether any network or file-write permission was needed.
 ```
 

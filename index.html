@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guide to Recording AI Use</title>
-    <meta name="description" content="A tool-agnostic guide to recording substantive AI use, with Dropbox, Overleaf, and Codex as the preferred example.">
+    <meta name="description" content="A practical, tool-agnostic guide that helps researchers automatically document substantive AI use, with Dropbox, Overleaf, and Codex as the preferred example.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css?v=20260716-2">
   </head>
   <body>
@@ -18,7 +19,7 @@
             <li><strong>Author:</strong> Yusaku Horiuchi</li>
             <li><strong>Affiliation:</strong> Syde P. Deeb Eminent Scholar in Political Science, Florida State University</li>
             <li><strong>Created:</strong> July 15, 2026</li>
-            <li><strong>Last revised:</strong> July 18, 2026</li>
+            <li><strong>Last revised:</strong> July 19, 2026</li>
           </ul>
 
           <p class="page-views">
@@ -26,25 +27,32 @@
           </p>
 
           <p>
-            A lightweight, tool-agnostic convention for making substantive AI use visible and auditable. Ask the AI tool to maintain a dated project-history file that records the request, inputs, actions, changes, outputs, and verification. Teams can use any suitable storage service, writing platform, version-control system, or AI assistant.
+            A practical convention that helps researchers automatically document substantive AI use. Once the instructions are installed, a file-capable AI assistant maintains a dated, human-readable history alongside the research project. The convention works across disciplines, project types, and tools.
           </p>
         </section>
 
         <section>
-          <h2>What This Guide Recommends</h2>
-          <p>The goal is not to prescribe a particular product. It is to keep a durable record close to the project so collaborators can understand how AI contributed without reconstructing the work from a private chat.</p>
+          <h2>For Any Researcher and Any Research Project</h2>
+          <p>This guide is for individual researchers, research teams, students, and staff in any discipline. It can be used for manuscripts, data analysis, code, literature reviews, presentations, grant proposals, research administration, teaching materials, and other research-related work.</p>
+          <p>The goal is not to prescribe a product or require researchers to save entire private conversations. It is to keep a concise, durable activity record close to the project so authors, collaborators, reviewers, or future researchers can understand how AI contributed.</p>
+        </section>
+
+        <section>
+          <h2>What the AI Records Automatically</h2>
+          <p>After the one-time setup, the instructions tell the AI assistant to create or update the project history at the end of each substantive task. A useful record includes:</p>
           <ul>
-            <li>Record substantive AI-assisted work, including inspection and decisions even when no project file changes.</li>
-            <li>Use dated, human-readable files that collaborators can inspect with ordinary tools.</li>
-            <li>Separate records by human collaborator and identify the AI tool that performed the work.</li>
-            <li>Include concrete inputs, files, commands, outputs, verification results, assumptions, and unresolved questions.</li>
-            <li>Store the history with the project when practical and follow the project's privacy, security, authorship, and version-control rules.</li>
+            <li>what the researcher asked the AI to do;</li>
+            <li>which files, data, or external sources the AI used;</li>
+            <li>what the AI inspected, decided, changed, or produced;</li>
+            <li>which checks were performed and what they found; and</li>
+            <li>any assumptions, limitations, failures, or unresolved questions.</li>
           </ul>
+          <p>The history should also record substantive inspection or advice when no project file changes. It supplements—not replaces—discipline-specific disclosure, data-protection, authorship, ethics, funder, institutional, journal, and repository requirements.</p>
         </section>
 
         <h2>Preferred Example: Dropbox + Overleaf + Codex</h2>
 
-        <p>Dropbox + Overleaf + Codex is the preferred example because collaborators can continue writing in Overleaf, Dropbox provides a synchronized local project folder, and Codex can edit the same files while maintaining the history record automatically.</p>
+        <p>Dropbox + Overleaf + Codex is the preferred example because collaborators can continue writing in Overleaf, Dropbox provides a synchronized local project folder, and Codex can edit the same files while maintaining the history automatically.</p>
 
         <ol class="use-steps">
           <li>
@@ -66,20 +74,21 @@
 
         <section>
           <h2>Adapt It to Other Tools</h2>
-          <p>The same convention works with other AI assistants, synchronized folders, document platforms, and repositories. Translate the setup details—not the transparency standard—to the tools your team already uses.</p>
+          <p>The recording standard is tool-agnostic. Researchers can adapt the setup details to the AI assistant, storage service, document platform, or repository they already use.</p>
           <ul>
             <li><strong>Another AI tool:</strong> place equivalent global or project instructions where that tool reads them. The included <a href="docs/claude-setup.md">Claude Code setup</a> is one example.</li>
             <li><strong>GitHub-centered Overleaf:</strong> work from a local clone connected to Overleaf and follow the repository's branch, commit, review, and synchronization rules.</li>
-            <li><strong>Another platform:</strong> keep the history beside the project when practical, or in another shared, durable location agreed upon by the team.</li>
+            <li><strong>Another research workflow:</strong> keep the history at the project root when practical, or in another shared, durable location agreed upon by the researcher or team.</li>
             <li><strong>Tools without file access:</strong> export or copy a concise activity record into the project history at the end of substantive work.</li>
           </ul>
+          <p>Automatic recording requires an AI tool that can write files and read persistent instructions. With other tools, the same record may need to be exported or saved manually.</p>
         </section>
 
         <section>
           <h2>Project History Convention</h2>
-          <p>When the project permits it, the AI tool should create or append to this file automatically:</p>
+          <p>Unless a project has its own convention, the AI tool should create or append to this file at the project root:</p>
           <pre><code>project_history/Your_Name/YYYY-MM-DD by Agent.md</code></pre>
-          <p>Use one folder per human collaborator and one file per date and AI tool. Record substantive inspection, decisions, and verification even when no other file changes.</p>
+          <p>Use one folder per human researcher and one file per date and AI tool. For solo projects, the researcher is also the history owner. Do not place confidential, sensitive, or identifying information in the history unless the project permits it.</p>
         </section>
 
         <section>
@@ -87,7 +96,7 @@
           <section class="resource-grid">
             <article class="resource-card">
               <h3>AGENTS.md</h3>
-              <p><a href="AGENTS.md">Shared instructions</a> for agents.</p>
+              <p><a href="AGENTS.md">Reusable instructions</a> for file-capable AI assistants.</p>
             </article>
             <article class="resource-card">
               <h3>CLAUDE.md</h3>
@@ -99,7 +108,7 @@
             </article>
             <article class="resource-card">
               <h3>Claude Setup</h3>
-              <p><a href="docs/claude-setup.md">Setup prompt</a> for Claude Code.</p>
+              <p><a href="docs/claude-setup.md">Alternative setup prompt</a> for Claude Code.</p>
             </article>
           </section>
         </section>
