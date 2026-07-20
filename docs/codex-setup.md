@@ -1,6 +1,6 @@
 # Codex Setup
 
-This setup implements the tool-agnostic recording convention with Codex. In the author's worked example, Dropbox synchronizes a shared Overleaf project and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should save the shared global instructions automatically.
+This setup implements the tool-agnostic recording convention with Codex. In the author's worked example, Dropbox synchronizes a shared Overleaf project and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should install the shared global instructions automatically without replacing any instructions you already have.
 
 ## Setup Prompt
 
@@ -10,10 +10,10 @@ Please install the shared instructions for automatically recording substantive A
 1. Fetch the current AGENTS.md from:
    https://raw.githubusercontent.com/yhoriuchi/ai-collaboration-guide/main/AGENTS.md
 2. Create ~/.codex if it does not exist.
-3. Save the fetched content exactly to:
-   ~/.codex/AGENTS.md
-4. Do not modify any research project files during this setup.
-5. Confirm the final file path and mention whether any network or file-write permission was needed.
+3. Inspect ~/.codex/AGENTS.md if it already exists. Never overwrite or discard existing user instructions.
+4. If ~/.codex/AGENTS.md does not exist, save the fetched content there. If it does exist, merge the fetched instructions into it while preserving all existing content. Put the new material in a clearly labeled section, avoid adding a duplicate if this recording convention is already present, and report any direct conflict instead of silently resolving it.
+5. Do not modify any research project files during this setup.
+6. Confirm the final file path, whether the file was created or merged, and whether any network or file-write permission was needed.
 ```
 
 ## Create or Open a Codex Project
@@ -41,4 +41,4 @@ Collaborator_Name
 
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
 
-If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to save that content to `~/.codex/AGENTS.md`.
+If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to install that content in `~/.codex/AGENTS.md` using the same preserve-and-merge procedure above.

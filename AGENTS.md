@@ -7,6 +7,7 @@ These instructions provide a tool-agnostic convention for automatically recordin
 - Be concrete and audit-friendly.
 - Prefer exact file paths, commands, dates, model names, and verification results over vague summaries.
 - Do not guess hidden runtime metadata. If a value is unavailable, write `Not exposed in this session`.
+- When installing these instructions, never replace or discard an existing user instruction file. Preserve the user's instructions and merge this recording convention into the file, clearly separating the added material and avoiding duplicate copies.
 - When multiple collaborators use AI agents, keep histories separated by human collaborator name.
 - After substantive work, maintain a durable project-history record even when no other project file changed.
 - Record the user's request, inputs examined, actions taken, files changed, outputs produced, verification performed, assumptions, and unresolved questions.

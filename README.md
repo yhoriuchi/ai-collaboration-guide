@@ -19,7 +19,7 @@ It provides:
 ### Worked example: Dropbox + Overleaf + Codex
 
 1. Enable Overleaf Dropbox integration for the shared project.
-2. Open `docs/codex-setup.md`, copy the setup prompt, and paste it into Codex. Codex should install the global instructions automatically.
+2. Open `docs/codex-setup.md`, copy the setup prompt, and paste it into Codex. Codex should install the global instructions automatically while preserving and merging with any existing user instructions in `~/.codex/AGENTS.md`.
 3. In Codex, open the synchronized Overleaf project folder as the working directory.
 4. Prompt Codex normally. It should automatically create or append to `project_history/Your_Name/YYYY-MM-DD by Codex.md` after substantive work.
 
