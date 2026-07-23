@@ -1,6 +1,6 @@
 # Codex Setup
 
-This setup implements the tool-agnostic recording convention with Codex. In the author's worked example, Dropbox synchronizes a shared Overleaf project and Codex works in that local folder while recording substantive AI use. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should install the shared global instructions automatically without replacing any instructions you already have.
+This setup implements the tool-agnostic recording convention with Codex. In the author's worked example, a common research-project root contains separate manuscript and analysis repositories plus one private project history. The manuscript repository may connect to Overleaf. Copy the setup prompt below, paste it into Codex, and approve the file write if Codex asks. Codex should install the shared global instructions automatically without replacing any instructions you already have.
 
 ## Setup Prompt
 
@@ -18,17 +18,25 @@ Please install the shared instructions for automatically recording substantive A
 
 ## Create or Open a Codex Project
 
-Choose the working directory that matches the project's collaboration path:
+Choose the working directory that represents the whole research project:
 
-- **Direct Overleaf:** choose the existing Overleaf project folder:
+- **Common-root research project:** when manuscript and analysis are separate repositories, choose their common parent:
 
 ```text
-~/Dropbox/Apps/Overleaf/Project-Name
+Research-Project/
+├── AGENTS.md
+├── README.md
+├── manuscript/
+├── analysis/
+├── project_history/
+└── others/
 ```
 
-- **GitHub-centered alternative:** choose a local clone of the repository connected to Overleaf. Authors can use their preferred editor, and Codex can work through its GitHub access rather than direct Overleaf access.
+- **Single-project workflow:** when one repository or Overleaf folder is the entire project, choose that established project root.
 
-Do not reorganize Dropbox folders or repository files merely for setup. Before editing in the GitHub-centered workflow, follow the project's branch, commit, review, and synchronization conventions; do not make overlapping unsynchronized edits in GitHub and Overleaf.
+Keep exactly one active `project_history/` at the common root. Do not create separate histories inside `manuscript/`, `analysis/`, an Overleaf mirror, the public replication package, or `others/`. Before editing either repository, inspect and respect its own branch, commit, remote, synchronization, review, and protection conventions.
+
+Use only institutionally approved Dropbox, Google Drive, iCloud, or other storage when the project's data agreements permit it. Never put raw or restricted data in Git or an Overleaf-synchronized folder.
 
 After that, prompt Codex in whatever way is natural for the task.
 
@@ -40,5 +48,7 @@ Collaborator_Name
 ```
 
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
+
+For replication-package work, also direct Codex to read the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/), the root `AGENTS.md` and `README.md`, and the target journal's current official replication-package instructions before substantive work.
 
 If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to install that content in `~/.codex/AGENTS.md` using the same preserve-and-merge procedure above.
