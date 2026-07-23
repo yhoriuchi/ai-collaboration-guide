@@ -23,6 +23,17 @@ It provides:
 3. In Codex, open the synchronized Overleaf project folder as the working directory.
 4. Prompt Codex normally. It should automatically create or append to `project_history/Your_Name/YYYY-MM-DD by Codex.md` after substantive work.
 
+Users should not need to name the model or reasoning setting in each prompt. The AI agent should record those settings automatically from available task/runtime metadata or the visible interface. If the environment genuinely does not expose a setting, the history should identify only that field as unavailable rather than asking the user routinely or guessing.
+
+Each daily history uses the actual tool name:
+
+```text
+project_history/Your_Name/YYYY-MM-DD by Codex.md
+project_history/Your_Name/YYYY-MM-DD by Claude.md
+```
+
+Each substantive entry records the exact model display name, family, slug, reasoning label and raw value, speed mode, and service tier when those fields are exposed.
+
 ### Other tools and workflows
 
 Claude Code users can follow the equally supported `docs/claude-setup.md` instructions. Use the same recording principle with another AI assistant, a different synchronized folder, a local repository, or a GitHub-centered Overleaf project. Adapt the instruction-file location and working-directory convention to the tool while preserving the content and auditability of the history record.

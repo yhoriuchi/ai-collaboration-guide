@@ -6,7 +6,7 @@
     <title>Guide to Recording AI Use</title>
     <meta name="description" content="A practical, tool-agnostic guide that helps researchers automatically document substantive AI use, illustrated with the author's Dropbox, Overleaf, and Codex workflow.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20260719-1">
+    <link rel="stylesheet" href="styles.css?v=20260723-1">
   </head>
   <body>
     <div class="guide-frame">
@@ -19,7 +19,7 @@
             <li><strong>Author:</strong> Yusaku Horiuchi</li>
             <li><strong>Affiliation:</strong> Syde P. Deeb Eminent Scholar in Political Science, Florida State University</li>
             <li><strong>Created:</strong> July 15, 2026</li>
-            <li><strong>Last revised:</strong> July 19, 2026</li>
+            <li><strong>Last revised:</strong> July 23, 2026</li>
           </ul>
 
           <p class="page-views">
@@ -47,6 +47,19 @@
             <li>which checks were performed and what they found; and</li>
             <li>any assumptions, limitations, failures, or unresolved questions.</li>
           </ul>
+          <h3>Detailed model information—without extra work for users</h3>
+          <p>The AI assistant should also record the exact model and runtime settings automatically. Users should not need to name the model or reasoning setting in every prompt. The assistant should use available task or runtime metadata and the model visibly selected in its interface.</p>
+          <div class="metadata-example" aria-label="Example model metadata">
+            <p><strong>Example for Codex</strong></p>
+            <pre><code>Model display name: GPT-5.6 Sol
+Model family: GPT-5.6
+Model slug: gpt-5.6-sol
+Reasoning level/effort: Light
+Reasoning raw/config value: low
+Speed mode: Not exposed in this session
+Service tier: Priority</code></pre>
+          </div>
+          <p>The record should preserve every known field precisely. It should use <code>Not exposed in this session</code> only for an individual field that is genuinely unavailable, never as a substitute for a model or setting that the runtime, interface, or existing conversation already identifies. The same rule applies to Codex, Claude, and other file-capable AI assistants.</p>
           <p>The history should also record substantive inspection or advice when no project file changes. It supplements—not replaces—discipline-specific disclosure, data-protection, authorship, ethics, funder, institutional, journal, and repository requirements.</p>
         </section>
 
@@ -89,8 +102,9 @@
         <section>
           <h2>Project History Convention</h2>
           <p>Unless a project has its own convention, the AI tool should create or append to this file at the project root:</p>
-          <pre><code>project_history/Your_Name/YYYY-MM-DD by Agent.md</code></pre>
-          <p>Use one folder per human researcher and one file per date and AI tool. For solo projects, the researcher is also the history owner. Do not place confidential, sensitive, or identifying information in the history unless the project permits it.</p>
+          <pre><code>project_history/Your_Name/YYYY-MM-DD by Codex.md
+project_history/Your_Name/YYYY-MM-DD by Claude.md</code></pre>
+          <p>Use one folder per human researcher and one file per date and AI tool. Append each substantive task to that day's file instead of overwriting earlier entries. Every appended entry should retain detailed, task-specific model metadata because the model or reasoning setting may change during the day. For solo projects, the researcher is also the history owner. Do not place confidential, sensitive, or identifying information in the history unless the project permits it.</p>
         </section>
 
         <section>

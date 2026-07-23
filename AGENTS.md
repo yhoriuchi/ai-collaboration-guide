@@ -24,6 +24,13 @@ If the project has no established convention, use the nearest project root and t
 project_history/Person_Name/YYYY-MM-DD by Agent.md
 ```
 
+Replace `Agent` with the actual AI tool name. For example:
+
+```text
+project_history/Person_Name/YYYY-MM-DD by Codex.md
+project_history/Person_Name/YYYY-MM-DD by Claude.md
+```
+
 Use one subfolder per human researcher, with spaces converted to underscores, and identify the AI tool in the filename. For a solo project, use the researcher's name. If the human history owner is unclear, ask when practical; otherwise use `Unknown_Researcher` and record the uncertainty.
 
 Use the researcher's local date and time zone. Create or append to the record at the end of each substantive task, including when the work only inspected materials, provided advice, made a decision, or performed verification. Do not overwrite earlier entries from the same day.
@@ -99,7 +106,7 @@ If the project has its own preferred history convention, follow that project-spe
 
 Record as much metadata as the AI agent can access.
 
-Be maximally specific about model and runtime settings. Do not record a generic label such as `GPT-5` when a more specific model is exposed. Prefer exact display names and slugs such as:
+Be maximally specific about model and runtime settings. Model recording is the AI agent's responsibility: obtain the information automatically from available task/runtime metadata and the AI interface whenever possible. Do not routinely ask the user to identify the model or reasoning setting, and do not require users to repeat those settings in each prompt. Treat settings explicitly stated by the user or visibly selected in the AI interface as exposed, authoritative session metadata; record them even when the underlying runtime configuration is not independently surfaced to the agent. Do not replace a known user-selected value with `Unknown`, `Not exposed in this session`, or a generic model family. Do not record a generic label such as `GPT-5` when a more specific model is known. Prefer exact display names and slugs such as:
 
 - `GPT-5.5`
 - `GPT-5.6 Terra`
@@ -108,12 +115,15 @@ Be maximally specific about model and runtime settings. Do not record a generic 
 - `Claude Opus`
 - `Claude Sonnet`
 
-Record both the human-readable reasoning effort and the raw/config value when possible, for example:
+Record both the human-readable reasoning effort and the raw/config value when known, for example:
 
 ```text
+Light / low
 Extra High / xhigh
 High / high
 ```
+
+If only the interface label is known, preserve that exact label and mark only the raw/config value as not exposed; do not mark the reasoning effort itself as unavailable. If a value truly is unavailable from the runtime, interface, and existing conversation context, say so rather than guessing. Ask the user about model metadata only when accurate attribution is materially necessary and cannot be obtained automatically; missing metadata alone should not interrupt ordinary work.
 
 Record speed or service tier explicitly, for example:
 
@@ -123,6 +133,34 @@ Priority
 Flex
 Not exposed in this session
 ```
+
+Apply this metadata check to every appended task or follow-up entry, not only the first entry in a daily history file. Before finalizing each entry, cross-check the model display name, model family, model slug, reasoning-effort label, and raw/config value against all available session context and earlier same-session entries. Do not copy an earlier entry's metadata if the model or reasoning setting changed between tasks.
+
+For every task entry, record separate fields for:
+
+```text
+Model display name:
+Model family:
+Model slug:
+Reasoning level/effort:
+Reasoning raw/config value:
+Speed mode:
+Service tier:
+```
+
+Use the exact values exposed for that task. For example:
+
+```text
+Model display name: GPT-5.6 Sol
+Model family: GPT-5.6
+Model slug: gpt-5.6-sol
+Reasoning level/effort: Light
+Reasoning raw/config value: low
+Speed mode: Not exposed in this session
+Service tier: Priority
+```
+
+The example illustrates the required level of detail; it is not a default model configuration. Codex, Claude, and other agents must record their own actual task-specific settings.
 
 Metadata should include, when available:
 
