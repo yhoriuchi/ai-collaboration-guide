@@ -1,6 +1,6 @@
-# Global Agent Instructions for Recording AI Use in Research
+# Global Agent Instructions for Recording AI Use in Any Project
 
-These instructions provide a tool-agnostic convention for automatically recording substantive AI use across research disciplines and project types. They may be adapted for Codex, Claude Code, or another AI system that can maintain project files.
+These instructions provide a tool-agnostic convention for automatically recording substantive AI use in any project. They may be used by individuals, teams, organizations, students, researchers, creators, developers, administrators, and others with Codex, Claude Code, or another AI system that can maintain project files.
 
 ## General Principles
 
@@ -8,19 +8,19 @@ These instructions provide a tool-agnostic convention for automatically recordin
 - Prefer exact file paths, commands, dates, model names, and verification results over vague summaries.
 - Do not guess hidden runtime metadata. If a value is unavailable, write `Not exposed in this session`.
 - When installing these instructions, never replace or discard an existing user instruction file. Preserve the user's instructions and merge this recording convention into the file, clearly separating the added material and avoiding duplicate copies.
-- When multiple collaborators use AI agents, keep histories separated by human collaborator name.
+- When multiple people use AI agents, keep histories separated by human collaborator or history-owner name.
 - After substantive work, maintain a durable project-history record even when no other project file changed.
 - Record the user's request, inputs examined, actions taken, files changed, outputs produced, verification performed, assumptions, and unresolved questions.
-- Follow project rules for privacy, confidential data, authorship, disclosure, version control, and the approved location of AI-use records.
-- Keep one authoritative active history for the whole research project. Do not create competing histories merely because the work spans multiple repositories, an Overleaf mirror, a public replication package, or an `others/` folder.
-- Keep `.Rhistory`, `.DS_Store`, caches, temporary files, credentials, secrets, and restricted-data contents out of `project_history/`.
-- Do not add project-specific `AGENTS.md` or `CLAUDE.md` files unless the user explicitly asks or the project truly needs its own rules. When a research project uses a common parent workspace, prefer one root `AGENTS.md` that governs all child repositories.
+- Follow project rules for privacy, confidentiality, security, intellectual property, authorship, disclosure, version control, retention, and the approved location of AI-use records.
+- Keep one authoritative active history for the whole project. Do not create competing histories merely because the work spans multiple repositories, applications, platforms, folders, or deliverables.
+- Keep operating-system metadata, application session files, caches, temporary files, credentials, secrets, tokens, and confidential or restricted contents out of `project_history/`.
+- Do not add project-specific `AGENTS.md` or `CLAUDE.md` files unless the user explicitly asks or the project truly needs its own rules. When a project uses a common parent workspace, prefer one root instruction file that governs all child repositories and project components.
 
-## General Research Project History
+## General Project History
 
-For substantive AI-assisted work in a research project, create or append to the project's established AI-use or project-history record. This applies to individual and collaborative work across disciplines, including manuscripts, data analysis, code, literature reviews, presentations, grant proposals, research administration, teaching materials, and other research-related artifacts.
+For substantive AI-assisted work in any project, create or append to the project's established AI-use or project-history record. This includes work that creates, changes, inspects, diagnoses, plans, decides, verifies, summarizes, organizes, or advises.
 
-First identify the project's established root. For a multi-repository research project, use the common parent workspace that contains or maps the manuscript repository, analysis repository, public replication-package staging area, and journal production/submission files. For a simpler single-repository or non-repository project, use its established root.
+First identify the project's established root: the highest practical folder that represents the user's intended project scope and contains or maps its relevant repositories, files, inputs, outputs, and deliverables. For a multi-repository project, use the common parent workspace. For a simpler single-repository or non-repository project, use its established root. Do not automatically use the current subdirectory when it is only one component of a larger project.
 
 If the project has no established convention, use this default path at that root:
 
@@ -35,42 +35,50 @@ project_history/Person_Name/YYYY-MM-DD by Codex.md
 project_history/Person_Name/YYYY-MM-DD by Claude.md
 ```
 
-Use one subfolder per human researcher, with spaces converted to underscores, and identify the AI tool in the filename. For a solo project, use the researcher's name. If the human history owner is unclear, ask when practical; otherwise use `Unknown_Researcher` and record the uncertainty.
+Use one subfolder per human collaborator or history owner, with spaces converted to underscores, and identify the AI tool in the filename. For a solo project, use the user's name when known. If the history owner is unclear, ask when practical; otherwise use `Unknown_Collaborator` and record the uncertainty.
 
-Use the researcher's local date and time zone. Create or append to the record at the end of each substantive task, including when the work only inspected materials, provided advice, made a decision, or performed verification. Do not overwrite earlier entries from the same day.
+Use the history owner's local date and time zone. Create or append to the record at the end of each substantive task, including when the work only inspected materials, provided advice, made a decision, or performed verification. Do not overwrite earlier entries from the same day.
 
-Do not include confidential, sensitive, proprietary, embargoed, or personally identifying information in the history unless the project permits it. The project history supplements rather than replaces any required AI disclosure, methods documentation, data-management record, laboratory notebook, authorship statement, or ethics documentation.
+Do not include confidential, sensitive, proprietary, embargoed, regulated, security-relevant, or personally identifying information in the history unless the project permits it. The project history supplements rather than replaces any required audit log, change log, disclosure, compliance record, methods documentation, decision record, authorship statement, or other formal documentation.
 
-## Multi-Repository Research Projects and Replication Packages
+## Project Root and Multi-Repository Projects
 
-For projects with separate manuscript and analysis repositories, follow the architecture in the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/):
+Use the simplest structure that represents the actual project. A general multi-repository project may look like:
 
 ```text
-Research-Project/
-├── AGENTS.md
-├── README.md
-├── manuscript/                 # Git repository 1
-├── analysis/                   # Git repository 2
+Project-Name/
+├── AGENTS.md                   # optional project-specific rules
+├── README.md                   # optional project map
 ├── project_history/
 │   └── Person_Name/
 │       └── YYYY-MM-DD by Agent.md
-└── others/                     # optional
+├── repository-one/
+├── repository-two/
+└── other-materials/
 ```
 
-The common parent is the single Codex or Claude workspace and normally is not a third Git repository. Keep exactly one active `project_history/` at this common root. Do not create separate active histories inside `manuscript/`, `analysis/`, an Overleaf mirror, a public replication package, or `others/`.
+The common parent is the single Codex or Claude workspace and does not need to be a Git repository. Keep exactly one active `project_history/` at this common root unless the user or organization intentionally defines another convention. Do not create separate active histories inside child repositories, mirrors, build folders, archives, exports, or deliverable folders.
 
-Keep four artifacts conceptually and physically distinct:
+Before changing a repository, shared document space, hosted service, or other stateful project component, inspect and respect its own version, synchronization, review, approval, access, and protection conventions. When outputs move between components, record the promotion, publication, export, or handoff step.
 
-1. Private research/build workspace.
-2. Manuscript and Overleaf repository.
-3. Public replication package.
-4. Journal production and submission files.
+The root `README.md`, when used, should act as the project map. It may identify the project's purpose, owners, components, repositories and remotes, source-of-truth locations, sensitive-data boundaries, inputs, outputs, handoff or publication workflow, and current status.
 
-Keep a root `README.md` as the private project map. It should identify the project, authors, target journal and current official instructions, both repositories and remotes, Overleaf status, secure local-data locations, public-package staging location, analysis-to-manuscript promotion workflow, optional folders, and current reproducibility status.
+## Examples of Projects
 
-Before changing either child repository, inspect its branch, commit, remote, synchronization, review/protection conventions, ahead/behind state, and dirty state independently. Use a documented promotion step for generated figures and tables copied from the analysis repository into the manuscript repository.
+This convention can be used for:
 
-The manuscript repository should contain only compilation-relevant manuscript and supplement materials. The private analysis repository should contain analysis code, data construction, validation, generated results, and public-package staging. Keep raw or restricted data outside Git and outside an Overleaf-synchronized folder, even when a repository is private.
+- software development, websites, applications, and data systems;
+- business, nonprofit, government, administrative, and operational projects;
+- design, writing, publishing, media, and other creative work;
+- teaching, coursework, training, and learning projects;
+- research, manuscripts, data analysis, laboratories, and replication packages;
+- event planning, personal organization, community work, and other structured projects.
+
+Adapt the metadata to the project. Record repository state for code, document versions for writing, source files and exports for design, datasets and transformations for analysis, decisions and approvals for operations, and other evidence that makes the work understandable and auditable.
+
+## Research and Replication Packages
+
+Research projects may use a more specific common-root architecture with separate manuscript and analysis repositories. For replication-package work, follow the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/) in addition to this general recording convention.
 
 For replication-package work:
 
@@ -80,15 +88,13 @@ For replication-package work:
 - Keep the project history private by default. Do not include it in the public replication package, manuscript repository, or journal submission unless the project explicitly requires disclosure there.
 - Record the target journal, journal-specific requirements, restricted-data limits, manual steps, release artifacts, verification results, and unresolved reproducibility risks.
 
-## Overleaf and Other Workflows
+For multi-repository research projects, keep one history at the common research-project root rather than separate histories inside the manuscript repository, analysis repository, Overleaf mirror, public replication package, or submission folders. Keep raw or restricted data outside Git and outside an Overleaf-synchronized folder when required by law, policy, agreement, or ethics.
 
-Direct Overleaf, GitHub-connected Overleaf, Dropbox, Google Drive, iCloud, and other approved workflows can all use this convention.
+## Storage, Platforms, and Tools
 
-- If the Overleaf or manuscript folder is the entire project, keep the history at that established project root.
-- If the manuscript or Overleaf folder is one component of a larger common research-project workspace, keep the single history at the common root instead.
-- Do not require direct Overleaf access or assume that manuscript files live under an Overleaf Dropbox path.
-- Respect each repository's branch, synchronization, review, and protection conventions, and avoid overlapping unsynchronized edits.
-- Cloud synchronization and Git have different scopes. Use only institutionally approved storage for the project and its data; keep restricted inputs in their authorized secure location.
+Local folders, Git repositories, Overleaf, Dropbox, Google Drive, iCloud, SharePoint, Box, Notion, and other systems can all participate in a project. Keep the history at the established project root or another durable location explicitly chosen by the user or organization.
+
+Cloud synchronization, version control, document history, and application storage have different scopes. Use approved storage and access controls. Do not copy confidential or restricted material into the history merely to make the log more detailed.
 
 ## Metadata Requirements
 
@@ -159,10 +165,10 @@ Metadata should include, when available:
 - Codex or Claude surface, such as desktop app, CLI, IDE, web, or cloud.
 - Source task/thread identifier or description.
 - Working directory.
-- Common research-project root and history location.
+- Project root and history location.
 - Project name.
-- Manuscript, paper, package, or artifact title.
-- Target journal and the current official journal requirements checked.
+- Main artifact, deliverable, document, system, or workstream.
+- Applicable organizational, legal, contractual, publication, platform, or domain-specific requirements checked.
 - User-stated goal.
 - Primary work type.
 - Model display name.
@@ -179,14 +185,15 @@ Metadata should include, when available:
 - Network/web access.
 - Active tools, skills, plugins, connectors, or MCP servers.
 - Shell, OS, and relevant runtime/tool versions.
-- Manuscript and analysis repository remotes, branches, commits, ahead/behind states, and dirty-state summaries when relevant.
+- Relevant repository remotes, branches, commits, ahead/behind states, and dirty-state summaries.
+- Relevant document versions, dataset versions, application states, or external-system identifiers.
 - Files inspected.
 - Files changed.
 - Files created, removed, relocated, staged, committed, pushed, or otherwise affected.
 - Commands run.
 - Verification commands and results.
 - Outputs produced.
-- Release archives, manifests, checksums, logs, page counts, file sizes, or other concrete artifact metadata when relevant.
+- Releases, deployments, exports, archives, manifests, checksums, logs, page counts, file sizes, record counts, or other concrete artifact metadata when relevant.
 - Open questions or unresolved issues.
 
 ## Preferred History Structure
@@ -218,9 +225,8 @@ Use this structure unless the user or project asks for a different one:
 - Working directory:
 - Human collaborator / history owner:
 - History file path:
-- Manuscript repository branch/commit/status:
-- Analysis repository branch/commit/status:
-- Manuscript/package/artifact:
+- Repository/repositories branch/commit/status:
+- Main artifact/deliverable:
 - Primary work type:
 - User goal:
 - Active tools/skills/plugins/connectors:

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guide to Recording AI Use</title>
-    <meta name="description" content="A practical, tool-agnostic guide for maintaining one detailed AI-use history across a research project, its manuscript and analysis repositories, and its replication workflow.">
+    <meta name="description" content="A practical, tool-agnostic guide for maintaining a detailed project history of AI-assisted work in any kind of project.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css?v=20260723-1">
   </head>
@@ -27,21 +27,22 @@
           </p>
 
           <p>
-            A practical convention that helps researchers automatically document substantive AI use. Once the instructions are installed, a file-capable AI assistant maintains a dated, human-readable history alongside the research project. The convention works across disciplines, project types, and tools.
+            A practical convention that helps anyone automatically document substantive AI use. Once the instructions are installed, a file-capable AI assistant maintains a dated, human-readable history alongside the project. The convention works across professions, disciplines, project types, and tools.
           </p>
         </section>
 
         <section>
-          <h2>For Any Researcher and Any Research Project</h2>
-          <p>This guide is for individual researchers, research teams, students, and staff in any discipline. It can be used for manuscripts, data analysis, code, literature reviews, presentations, grant proposals, research administration, teaching materials, and other research-related work.</p>
-          <p>The goal is not to prescribe a product or require researchers to save entire private conversations. It is to keep a concise, durable activity record close to the project so authors, collaborators, reviewers, or future researchers can understand how AI contributed.</p>
+          <h2>For Anyone and Any Project</h2>
+          <p>This guide is for individuals, teams, organizations, students, researchers, developers, creators, administrators, and anyone else who wants a durable record of AI-assisted work.</p>
+          <p>Use it for software, websites, business operations, design, writing, publishing, teaching, coursework, research, event planning, personal organization, community work, or any other structured project.</p>
+          <p>The goal is not to prescribe a product or require people to save entire private conversations. It is to keep a concise, durable activity record close to the project so owners, collaborators, reviewers, clients, auditors, or future contributors can understand how AI contributed.</p>
         </section>
 
         <section>
           <h2>What the AI Records Automatically</h2>
           <p>After the one-time setup, the instructions tell the AI assistant to create or update the project history at the end of each substantive task. A useful record includes:</p>
           <ul>
-            <li>what the researcher asked the AI to do;</li>
+            <li>what the user asked the AI to do;</li>
             <li>which files, data, or external sources the AI used;</li>
             <li>what the AI inspected, decided, changed, or produced;</li>
             <li>which checks were performed and what they found; and</li>
@@ -60,35 +61,33 @@ Speed mode: Not exposed in this session
 Service tier: Priority</code></pre>
           </div>
           <p>The record should preserve every known field precisely. It should use <code>Not exposed in this session</code> only for an individual field that is genuinely unavailable, never as a substitute for a model or setting that the runtime, interface, or existing conversation already identifies. The same rule applies to Codex, Claude, and other file-capable AI assistants.</p>
-          <p>For projects with multiple repositories, the same entry should identify the common project root; manuscript and analysis repository branches, commits, remotes, and dirty states; external sources and access dates; journal requirements; files staged, committed, or pushed; and concrete verification evidence such as logs, checksums, archive tests, page counts, or file sizes when relevant.</p>
-          <p>The history should also record substantive inspection or advice when no project file changes. It supplements—not replaces—discipline-specific disclosure, data-protection, authorship, ethics, funder, institutional, journal, and repository requirements.</p>
+          <p>Adapt the evidence to the project: repository and deployment state for software; document versions for writing; source assets and exports for design; datasets and transformations for analysis; decisions and approvals for operations; and external sources and access dates whenever relevant.</p>
+          <p>The history should also record substantive inspection, planning, diagnosis, decisions, or advice when no project file changes. It supplements—not replaces—required audit logs, change logs, disclosures, compliance records, decision records, authorship statements, or other formal documentation.</p>
         </section>
 
         <section>
-          <h2>One Research Project, One Active History</h2>
-          <p>This guide follows the architecture in the <a href="https://yhoriuchi.github.io/replication-package-guide/">Replication Package Guide</a>. When a project has separate manuscript and analysis repositories, open their common parent as the single Codex or Claude workspace and keep exactly one active <code>project_history/</code> there.</p>
-          <pre><code>Research-Project/
-├── AGENTS.md
-├── README.md
-├── manuscript/                 # Git repository 1
-├── analysis/                   # Git repository 2
+          <h2>One Project, One Active History</h2>
+          <p>Choose the highest practical folder that represents the intended project. For a simple project, this may be one folder or repository. For a larger project, open the common parent that contains its repositories, files, inputs, outputs, and deliverables.</p>
+          <pre><code>Project-Name/
+├── AGENTS.md                   # optional project rules
+├── README.md                   # optional project map
 ├── project_history/
 │   └── Your_Name/
 │       └── YYYY-MM-DD by Agent.md
-└── others/                     # optional</code></pre>
-          <p>Do not create competing histories inside the manuscript repository, analysis repository, Overleaf mirror, public replication package, or <code>others/</code>. If an Overleaf or single repository folder is the entire project, that established folder remains the project root.</p>
+├── repository-one/
+├── repository-two/
+└── other-materials/</code></pre>
+          <p>The common parent does not need to be a Git repository. Keep one active <code>project_history/</code> at the project root unless the user or organization intentionally defines another convention. Do not create competing histories inside child repositories, mirrors, builds, archives, exports, or deliverable folders.</p>
         </section>
 
-        <h2>Worked Example: Common Project Root + Two Repositories</h2>
-
-        <p>The author’s current workflow keeps the manuscript and analysis in separate Git repositories under one approved, cloud-synchronized research-project root. The manuscript repository may connect to Overleaf. The private analysis repository holds code, validation, generated results, and public-package staging. The common root holds the project map, shared instructions, and private AI-use history.</p>
+        <h2>How to Use the Guide</h2>
 
         <ol class="use-steps">
           <li>
-            <strong>Create or identify the common research-project root.</strong> Keep a root <code>AGENTS.md</code>, a private project-map <code>README.md</code>, the manuscript and analysis repositories, one <code>project_history/</code>, and optional non-core materials.
+            <strong>Create or identify the project root.</strong> Use the folder that represents the full scope of work—not an incidental subfolder.
           </li>
           <li>
-            <strong>Install the shared Codex instructions.</strong> Copy the setup prompt and paste it into Codex. Codex should save the global instruction file automatically.
+            <strong>Install the shared instructions once.</strong> Copy the setup prompt for Codex or Claude Code. The setup preserves existing instructions and merges this convention into them.
             <p class="step-note">The setup preserves any existing <code>AGENTS.md</code> instructions and merges the recording convention into them; it does not replace the user's file.</p>
             <div class="hero-actions step-actions">
               <a class="button button-primary" href="docs/codex-setup.md">Codex Setup</a>
@@ -96,7 +95,7 @@ Service tier: Priority</code></pre>
             </div>
           </li>
           <li>
-            <strong>Open the common parent folder</strong> as the single Codex or Claude project so the agent can inspect both repositories and maintain one history.
+            <strong>Open the project root</strong> as the Codex or Claude project so the agent can see the relevant context and maintain one history.
           </li>
           <li>
             <strong>Prompt normally.</strong> After substantive work, the agent should append to the common dated history automatically, including tasks that only inspect, diagnose, decide, or verify.
@@ -104,18 +103,21 @@ Service tier: Priority</code></pre>
         </ol>
 
         <section>
-          <h2>Keep Four Artifacts Distinct</h2>
-          <ol>
-            <li><strong>Private research/build workspace:</strong> the complete authorized environment for analysis and validation.</li>
-            <li><strong>Manuscript and Overleaf repository:</strong> compilation-relevant paper and supplement materials.</li>
-            <li><strong>Public replication package:</strong> a deliberately staged, de-identified, self-contained release.</li>
-            <li><strong>Journal production and submission files:</strong> submission snapshots, proofs, forms, and production exports.</li>
-          </ol>
-          <p>The project history is private by default and should not be copied into the public replication package, manuscript repository, or journal submission unless the project explicitly requires it. Raw or restricted data should remain outside Git and outside an Overleaf-synchronized folder.</p>
+          <h2>Adapt the Record to the Project</h2>
+          <ul>
+            <li><strong>Software and websites:</strong> repositories, branches, commits, tests, deployments, issues, and release versions.</li>
+            <li><strong>Writing and publishing:</strong> drafts, document versions, sources, edits, decisions, approvals, and exports.</li>
+            <li><strong>Design and media:</strong> source assets, prompts, tools, variants, reviews, licenses, and final exports.</li>
+            <li><strong>Business and operations:</strong> inputs, decisions, affected records, approvals, communications, and outcomes.</li>
+            <li><strong>Data and research:</strong> datasets, scripts, transformations, methods, outputs, checks, restrictions, and sources.</li>
+            <li><strong>Personal and community projects:</strong> goals, plans, materials, decisions, deliverables, and follow-up actions.</li>
+          </ul>
+          <p>Project history is private by default. Share or publish it only when the user, organization, or project policy permits it.</p>
         </section>
 
         <section>
-          <h2>Replication-Package Tasks</h2>
+          <h2>Specialized Example: Research and Replication Packages</h2>
+          <p>Research is one important use case, not the limit of this guide. Multi-repository research projects can keep one history at the common parent above manuscript and analysis repositories.</p>
           <p>Before substantive replication-package work, the user and agent should read the current Replication Package Guide, the root <code>AGENTS.md</code> and <code>README.md</code>, and the target journal’s most up-to-date official replication-package instructions. Record each source and access date in the project history.</p>
           <p>Journal instructions take priority for package requirements. This AI Collaboration Guide and the root project instructions govern AI-use recording and the location of the single project history.</p>
           <div class="hero-actions">
@@ -125,15 +127,15 @@ Service tier: Priority</code></pre>
 
         <section>
           <h2>Adapt It to Other Tools</h2>
-          <p>The recording standard is tool-agnostic. Researchers can adapt the setup details to the AI assistant, storage service, document platform, or repository they already use.</p>
+          <p>The recording standard is tool-agnostic. Adapt the setup details to the AI assistant, storage service, document platform, repository, or workflow already in use.</p>
           <ul>
             <li><strong>Codex or Claude Code:</strong> use either included setup prompt. Both install the same recording convention in the location read by that tool.</li>
-            <li><strong>Direct or GitHub-connected Overleaf:</strong> keep one common history above the manuscript folder when the manuscript is part of a larger project; otherwise use the established manuscript-project root.</li>
-            <li><strong>Dropbox, Google Drive, or iCloud:</strong> use only institutionally approved storage and respect data agreements. Cloud sync and Git have different scopes.</li>
-            <li><strong>Another research workflow:</strong> keep one history at the established root in a shared, durable, approved location.</li>
+            <li><strong>Local folders and Git:</strong> keep the history at the project root or common parent, even when several repositories are involved.</li>
+            <li><strong>Cloud and document platforms:</strong> Dropbox, Google Drive, iCloud, SharePoint, Box, Notion, Overleaf, and similar systems can participate when their use is permitted.</li>
+            <li><strong>Another workflow:</strong> keep one history at the established root or another shared, durable location chosen by the user or organization.</li>
             <li><strong>Tools without file access:</strong> export or copy a concise activity record into the project history at the end of substantive work.</li>
           </ul>
-          <p>Automatic recording requires an AI tool that can write files and read persistent instructions. With other tools, the same record may need to be exported or saved manually.</p>
+          <p>Automatic recording requires an AI tool that can write files and read persistent instructions. With other tools, the same record may need to be exported or saved manually. Cloud sync, version control, document history, and application storage have different scopes; use appropriate privacy, security, retention, and access controls.</p>
         </section>
 
         <section>
@@ -141,7 +143,7 @@ Service tier: Priority</code></pre>
           <p>Unless a project has its own convention, the AI tool should create or append to this file at the established common project root:</p>
           <pre><code>project_history/Your_Name/YYYY-MM-DD by Codex.md
 project_history/Your_Name/YYYY-MM-DD by Claude.md</code></pre>
-          <p>Use one folder per human researcher and one file per date and AI tool. Append each substantive task to that day's file instead of overwriting earlier entries. Every appended entry should retain detailed, task-specific model metadata because the model or reasoning setting may change during the day. For solo projects, the researcher is also the history owner. Do not place confidential, sensitive, restricted, proprietary, or identifying information in the history unless the project permits it.</p>
+          <p>Use one folder per human collaborator or history owner and one file per date and AI tool. Append each substantive task to that day's file instead of overwriting earlier entries. Every appended entry should retain detailed, task-specific model metadata because the model or reasoning setting may change during the day. Do not place confidential, sensitive, restricted, proprietary, regulated, security-relevant, or identifying information in the history unless the project permits it.</p>
         </section>
 
         <section>
