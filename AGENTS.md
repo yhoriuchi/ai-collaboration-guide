@@ -78,11 +78,11 @@ Adapt the metadata to the project. Record repository state for code, document ve
 
 ## Research and Replication Packages
 
-Research projects may use a more specific common-root architecture with separate manuscript and analysis repositories. For replication-package work, follow the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/) in addition to this general recording convention.
+Research projects may use a more specific common-root architecture with separate manuscript and analysis repositories. For replication-package work, follow the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/) in addition to this general recording convention.
 
 For replication-package work:
 
-- Read the current Replication Package Guide, the root `AGENTS.md` and `README.md`, and the target journal's most up-to-date official replication-package instructions before substantive work.
+- Read the current AI-Assisted Research Project Management and Replication Guide, the root `AGENTS.md` and `README.md`, and the target journal's most up-to-date official replication-package instructions before substantive work.
 - Record each external source or supplied file and its access date.
 - When journal instructions conflict with the replication guide, follow the journal for package requirements. For AI-use recording and history location, follow this AI Collaboration Guide and the root project instructions.
 - Keep the project history private by default. Do not include it in the public replication package, manuscript repository, or journal submission unless the project explicitly requires disclosure there.

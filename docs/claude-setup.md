@@ -44,7 +44,7 @@ After that, prompt Claude in whatever way is natural for the task.
 
 You do not need to manually create the history log each time. The shared instructions ask Claude to create or append it automatically.
 
-For replication-package work, also direct Claude to read the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/), the root `AGENTS.md` and `README.md`, and the target journal's current official replication-package instructions before substantive work.
+For replication-package work, also direct Claude to read the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root `AGENTS.md` and `README.md`, and the target journal's current official replication-package instructions before substantive work.
 
 If Claude cannot access the URL automatically, open `AGENTS.md` from this repository and ask Claude to install that content in `~/.claude/AGENTS.md` using the same preserve-and-merge procedure above, then ensure that `~/.claude/CLAUDE.md` contains `@~/.claude/AGENTS.md` without replacing its existing content.
 

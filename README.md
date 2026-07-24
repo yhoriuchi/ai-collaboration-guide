@@ -44,4 +44,4 @@ Claude Code users can follow the equally supported `docs/claude-setup.md` instru
 
 Automatic recording requires an AI assistant that can write project files and follow persistent instructions. If a tool cannot do that, export or copy a concise activity record manually. In all cases, follow applicable privacy, confidentiality, security, intellectual-property, retention, disclosure, contractual, organizational, platform, and domain-specific requirements.
 
-Research and replication packages remain a supported specialized use case. For replication-package work, read the current [Replication Package Guide](https://yhoriuchi.github.io/replication-package-guide/), the root project instructions and map, and the target journal's current official requirements before substantive work.
+Research and replication packages remain a supported specialized use case. For replication-package work, read the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root project instructions and map, and the target journal's current official requirements before substantive work.
