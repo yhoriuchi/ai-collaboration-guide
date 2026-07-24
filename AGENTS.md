@@ -57,7 +57,7 @@ Project-Name/
 └── other-materials/
 ```
 
-The common parent is the single Codex or Claude workspace and does not need to be a Git repository. Keep exactly one active `project_history/` at this common root unless the user or organization intentionally defines another convention. Do not create separate active histories inside child repositories, mirrors, build folders, archives, exports, or deliverable folders.
+The common parent is the single AI workspace and does not need to be a Git repository. Keep exactly one active `project_history/` at this common root unless the user or organization intentionally defines another convention. Do not create separate active histories inside child repositories, mirrors, build folders, archives, exports, or deliverable folders.
 
 Before changing a repository, shared document space, hosted service, or other stateful project component, inspect and respect its own version, synchronization, review, approval, access, and protection conventions. When outputs move between components, record the promotion, publication, export, or handoff step.
 
@@ -80,9 +80,9 @@ Adapt the metadata to the project. Record repository state for code, document ve
 
 Research projects may use a more specific common-root architecture with separate manuscript and analysis repositories. For replication-package work, follow the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/) in addition to this general recording convention.
 
-For replication-package work:
+For replication-package work, the AI agent must:
 
-- Read the current AI-Assisted Research Project Management and Replication Guide, the root `AGENTS.md` and `README.md`, and the target journal's most up-to-date official replication-package instructions before substantive work.
+- Read the current AI-Assisted Research Project Management and Replication Guide, the root `AGENTS.md` and `README.md`, and the target journal's most up-to-date official replication-package instructions before substantive work. The user may read these materials for context but is not responsible for studying the detailed operational requirements.
 - Record each external source or supplied file and its access date.
 - When journal instructions conflict with the replication guide, follow the journal for package requirements. For AI-use recording and history location, follow this AI Collaboration Guide and the root project instructions.
 - Keep the project history private by default. Do not include it in the public replication package, manuscript repository, or journal submission unless the project explicitly requires disclosure there.

@@ -20,7 +20,7 @@ It provides:
 
 1. Create or identify the highest practical folder representing the intended project scope.
 2. Open `docs/codex-setup.md`, copy the setup prompt, and paste it into Codex. Codex should install the global instructions automatically while preserving and merging with any existing user instructions in `~/.codex/AGENTS.md`.
-3. Open the project root as the Codex or Claude workspace.
+3. Open the project root as the AI workspace.
 4. Prompt normally. Codex should automatically create or append to `project_history/Your_Name/YYYY-MM-DD by Codex.md` after substantive work.
 
 For a multi-repository project, use the common parent and keep one active history there. Do not create competing histories inside child repositories, mirrors, builds, archives, exports, or deliverable folders.
@@ -44,4 +44,4 @@ Claude Code users can follow the equally supported `docs/claude-setup.md` instru
 
 Automatic recording requires an AI assistant that can write project files and follow persistent instructions. If a tool cannot do that, export or copy a concise activity record manually. In all cases, follow applicable privacy, confidentiality, security, intellectual-property, retention, disclosure, contractual, organizational, platform, and domain-specific requirements.
 
-Research and replication packages remain a supported specialized use case. For replication-package work, read the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root project instructions and map, and the target journal's current official requirements before substantive work.
+Research and replication packages remain a supported specialized use case. For replication-package work, the AI agent—not the user—is responsible for reading the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root project instructions and map, and the target journal's current official requirements before substantive work. The user may read them for context.

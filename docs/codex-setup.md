@@ -49,6 +49,6 @@ Collaborator_Name
 
 You do not need to manually create the history log each time. The shared instructions ask Codex to create or append it automatically.
 
-For replication-package work, also direct Codex to read the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root `AGENTS.md` and `README.md`, and the target journal's current official replication-package instructions before substantive work.
+For replication-package work, Codex must read the current [AI-Assisted Research Project Management and Replication Guide](https://yhoriuchi.github.io/replication-package-guide/), the root `AGENTS.md` and `README.md`, and the target journal's current official replication-package instructions before substantive work. The user may read these materials for context but is not responsible for studying the detailed operational requirements.
 
 If Codex cannot access the URL automatically, open `AGENTS.md` from this repository and ask Codex to install that content in `~/.codex/AGENTS.md` using the same preserve-and-merge procedure above.
